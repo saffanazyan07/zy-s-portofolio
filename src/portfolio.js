@@ -14,7 +14,7 @@ const greeting = {
   username: "Zijun Jim Yi",
   title: "Hi all, I'm Zijun",
   subTitle: emoji(
-    "I am a Master of Science in Applied Data Science student at Syracuse University. I love to solve problems only machine learning and artificial intelligence can solve.  I am currently working on detecting racial and gender bias in the popular ASR systems, as well as a solution using machine learning method."
+    "I am a Syracuse University Applied Data Science Master's student. I enjoy tackling challenges that can only be solved by machine learning and artificial intelligence. I'm currently working on a solution that uses machine learning to detect racial and gender bias in popular ASR systems."
   ),
   resumeLink:
     "https://1drv.ms/b/s!AvPUHjsmnKcag8JXlSNqP10iH_UyTA?e=FmUtHm", // Set to empty to hide the button
@@ -63,6 +63,14 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-r-project"
     },
     {
+      skillName: "aws",
+      fontAwesomeClassname: "fab fa-aws"
+    },
+    {
+      skillName: "docker",
+      fontAwesomeClassname: "fab fa-docker"
+    },
+    {
       skillName: "html-5",
       fontAwesomeClassname: "fab fa-html5"
     },
@@ -83,17 +91,9 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-vuejs"
     },
     {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
       skillName: "firebase",
       fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
+    } 
   ],
   display: true // Set false to hide this section, defaults to true
 };
