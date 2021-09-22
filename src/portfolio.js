@@ -16,8 +16,7 @@ const greeting = {
   subTitle: emoji(
     "I am a Syracuse University Applied Data Science Master's student. I enjoy tackling challenges that can only be solved by machine learning and artificial intelligence. I'm currently working on a solution that uses machine learning to detect racial and gender bias in popular automatic speech recognition systems."
   ),
-  resumeLink:
-    "https://1drv.ms/b/s!AvPUHjsmnKcag8JXlSNqP10iH_UyTA?e=FmUtHm", // Set to empty to hide the button
+  resumeLink: "https://1drv.ms/b/s!AvPUHjsmnKcag8JXlSNqP10iH_UyTA?e=FmUtHm", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -40,7 +39,8 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "I SOLVE PROBLEMS, AUTOMATE PROCESSES, WEB DEVELOPER & DATA SCIENTIST ARE JUST THE TITLES",
+  subTitle:
+    "I SOLVE PROBLEMS, AUTOMATE PROCESSES, WEB DEVELOPER & DATA SCIENTIST ARE JUST THE TITLES",
   skills: [
     emoji("⚡ Design Machine Learning / Deep Learning model as a solution"),
     emoji("⚡ Integration of third party services such as AWS / Twilio")
@@ -93,7 +93,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "firebase",
       fontAwesomeClassname: "fas fa-fire"
-    } 
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -122,7 +122,9 @@ const educationInfo = {
       subHeader: "Bachelor of Science in Information Management & Technology",
       duration: "September 2016 - April 2020",
       desc: "Took courses about Software Engineering, Statistics, Data Analytics, ...",
-      descBullets: ["Some Projects are SpeakEZ, Storage Web, Covid Vsualization Poster"]
+      descBullets: [
+        "Some Projects are SpeakEZ, Storage Web, Covid Vsualization Poster"
+      ]
     }
   ]
 };
@@ -205,7 +207,8 @@ const bigProjects = {
     {
       image: require("./assets/images/s4Logo.png"),
       projectName: "Science of Science Summer School",
-      projectDesc: "A science of science conference. where I Hosted website, managed YouTube Account, Slack Community. Most importantly to ensured a collaborative conference environment. It was an amazing experience and a great success.",
+      projectDesc:
+        "A science of science conference. where I Hosted website, managed YouTube Account, Slack Community. Most importantly to ensured a collaborative conference environment. It was an amazing experience and a great success.",
       footerLink: [
         {
           name: "Visit Website",
@@ -217,7 +220,8 @@ const bigProjects = {
     {
       image: require("./assets/images/eileenLogo.png"),
       projectName: "EILEEN",
-      projectDesc: "EILEEN: A search engine for scientific publications. Science depends on fundings to close knowledge gaps.  Pinpointing such gaps is time-consuming because there is no centralized dataset or system that links publications and grants...",
+      projectDesc:
+        "EILEEN: A search engine for scientific publications. Science depends on fundings to close knowledge gaps.  Pinpointing such gaps is time-consuming because there is no centralized dataset or system that links publications and grants...",
       footerLink: [
         {
           name: "Visit Website",
