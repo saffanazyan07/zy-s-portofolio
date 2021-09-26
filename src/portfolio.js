@@ -233,58 +233,119 @@ const bigProjects = {
   display: true // Set false to hide this section, defaults to true
 };
 
+// Publication Section
+// Include certificates, talks etc
+
+const publicationSection = {
+  title: emoji("Publications And Publications 📝 "),
+  subtitle: "Publications, Publications, and more Publications !",
+
+  publicationsCards: [
+    {
+      title:
+        "“Alexa, is my favorite place the kitchen or garage?”: A method for testing gender biases in commercial AI black boxes",
+      abstract:
+        "Commercial applications powered by artificial intelligence have become the selling point of technology brands. While the ingredients of those applications are kept as trade secrets, it has been argued and proved that AI, the essential building block of those applications, has gender and race bias embedded.  In this work, we proposed a post-hoc black box bias detection method inspired by psychophysics. We were able to detect biases related to gender in Amazon Alexa’s “favorite place” built-in skill. More precisely, we found that Alexa tends to detect male voices when the user is mentioning “Garage”, and it tends to detect female voices when the voice is mentioning “Kitchen”. We generalize this use case to detect biases for words, voices, and voice-word pairs.  We apply it to analyze Amazon’s Lex service over a large collection of gendered occupations. However, our results suggest little to no biases in such services. Nevertheless, we proposed that our method can be useful to detect general biases in commercial AI black boxes.",
+      authors: [
+        {
+          name: "Lizhen Liang", url: "https://www.linkedin.com/in/lizhenliang/"
+        },
+        {
+          name: "Zijun Yi"
+        },
+        {
+          name: "Daniel Acuña", url: "https://acuna.io/"
+        }
+      ]
+    },
+    {
+      title:
+        "Predicting the usage of scientific datasets based on article, author, institution, and journal bibliometrics",
+      abstract:
+        "Scientific datasets are increasingly crucial for knowledge accumulation and reproducibility, making it essential to understand how they are used. Although usage information is hard to obtain, features from the publications that describe a dataset can provide clues. This article associates dataset downloads with the authors’ h-index, institutional prestige, journal ranking, and the references used in the publication that first introduces them. Tens of thousands of datasets and associated publications from figshare.com are used in our analysis. We found that a gradient boosting model achieved the highest performance against linear regression, random forests, and artificial neural networks. Our interpretation results suggest that journal ranking is highly predictive of usage while the author’s institutional prestige and h-index are less critical. In addition, we found that publications with a long but focused body of references are associated with more datasets downloads. We also show that prediction performance decays rapidly the farther we estimate downloads into the future. Finally, we discuss the implications of our work for reproducibility and data policies.",
+      authors: [
+        {name: "Anonymous author #1"},
+        {name: "Anonymous author #2"},
+        {name: "Anonymous author #3"},
+        {name: "Anonymous author #4"}
+      ]
+    },
+    {
+      title:
+        "EILEEN: A recommendation system for scientific publications and grants",
+      abstract:
+        "Finding relevant scientific articles is crucial for advancing knowledge. While there are many recommendation systems for commercial purposes, relatively few are available for scientific articles. In this work, we describe a EILEEN (Exploratory Innovator of LitEraturE Networks), a recommendation system of scientific publications and grants. As part of the system, we describe its architecture for ingesting documents, its publication and grant modeling, and its keyphrase extractor. Using its unique dataset of log-in user behavior, we validate our recommendation system based on Latent Semantic Analysis (LSA). We found that a simple Random Forest-based recommendation achieves a AUC of 0.9, significantly outperforming the standard More Like This (MLK) Elasticsearch algorithm. Our results suggest that recommendation systems for science can be significantly improved if we use data about scientists’ search behavior. We make the code and dataset available for other researchers to compare.",
+      authors: [
+        {
+          name: "Daniel Acuña", url: "https://acuna.io/"
+        },
+        {
+          name: "Zijun Yi"
+        },
+        {
+          name: "Kartik Nagre", url: "https://www.linkedin.com/in/kartiknagre/"
+        },
+        {
+          name: "Priya Matnani", url: "https://www.linkedin.com/in/priyamatnani/"
+        },
+        {
+          name: "Ziyi Qiu"
+        }
+      ]
+    },
+    {
+      title: "Biases in datasets and models used in the study of science",
+      abstract: "WIP",
+      authors: [
+        {
+          name: "Lizhen Liang", url: "https://www.linkedin.com/in/lizhenliang/", 
+        },
+        {
+          name: "Zijun Yi"
+        },
+        {
+          name: "Daniel Acuña", url: "https://acuna.io/"
+        }
+      ]
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
+
 // Achievement Section
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Achievements And Publications 📝 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Achievements, Publications, and Some Cool Stuff that I have done !",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title:
+        "“Alexa, is my favorite place the kitchen or garage?”: A method for testing gender biases in commercial AI black boxes",
+      subtitle:
+        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+      footerLink: [
+        {name: "Certification"},
+        {name: "Certification"},
+        {name: "Certification"},
+        {name: "Certification"},
+        {name: "Certification"}
+      ]
+    },
+    {
+      title:
+        "“Alexa, is my favorite place the kitchen or garage?”: A method for testing gender biases in commercial AI black boxes",
       subtitle:
         "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
       image: require("./assets/images/codeInLogo.webp"),
       footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
-    },
-    {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
+        {name: "Certification"},
+        {name: "Certification"},
+        {name: "Certification"},
+        {name: "Certification"},
+        {name: "Certification"}
       ]
     }
   ],
@@ -372,6 +433,7 @@ export {
   openSource,
   bigProjects,
   achievementSection,
+  publicationSection,
   blogSection,
   talkSection,
   podcastSection,
