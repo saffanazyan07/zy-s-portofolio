@@ -27,12 +27,15 @@ export default function PublicationCard({cardInfo, isDark}) {
                   <span
                     key={i}
                     className={
-                      v.url ?  
-                      isDark ? "dark-mode certificate-tag" : "certificate-tag" :
-                      isDark ? "dark-mode certificate-tag nohover" : "certificate-tag nohover"
+                      v.url
+                        ? isDark
+                          ? "dark-mode certificate-tag"
+                          : "certificate-tag"
+                        : isDark
+                        ? "dark-mode certificate-tag nohover"
+                        : "certificate-tag nohover"
                     }
                     onClick={() => openUrlInNewTab(v.url)}
-
                   >
                     {v.name}
                   </span>

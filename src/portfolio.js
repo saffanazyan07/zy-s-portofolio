@@ -248,13 +248,15 @@ const publicationSection = {
         "Commercial applications powered by artificial intelligence have become the selling point of technology brands. While the ingredients of those applications are kept as trade secrets, it has been argued and proved that AI, the essential building block of those applications, has gender and race bias embedded.  In this work, we proposed a post-hoc black box bias detection method inspired by psychophysics. We were able to detect biases related to gender in Amazon Alexa’s “favorite place” built-in skill. More precisely, we found that Alexa tends to detect male voices when the user is mentioning “Garage”, and it tends to detect female voices when the voice is mentioning “Kitchen”. We generalize this use case to detect biases for words, voices, and voice-word pairs.  We apply it to analyze Amazon’s Lex service over a large collection of gendered occupations. However, our results suggest little to no biases in such services. Nevertheless, we proposed that our method can be useful to detect general biases in commercial AI black boxes.",
       authors: [
         {
-          name: "Lizhen Liang", url: "https://www.linkedin.com/in/lizhenliang/"
+          name: "Lizhen Liang",
+          url: "https://www.linkedin.com/in/lizhenliang/"
         },
         {
           name: "Zijun Yi"
         },
         {
-          name: "Daniel Acuña", url: "https://acuna.io/"
+          name: "Daniel Acuña",
+          url: "https://acuna.io/"
         }
       ]
     },
@@ -277,16 +279,19 @@ const publicationSection = {
         "Finding relevant scientific articles is crucial for advancing knowledge. While there are many recommendation systems for commercial purposes, relatively few are available for scientific articles. In this work, we describe a EILEEN (Exploratory Innovator of LitEraturE Networks), a recommendation system of scientific publications and grants. As part of the system, we describe its architecture for ingesting documents, its publication and grant modeling, and its keyphrase extractor. Using its unique dataset of log-in user behavior, we validate our recommendation system based on Latent Semantic Analysis (LSA). We found that a simple Random Forest-based recommendation achieves a AUC of 0.9, significantly outperforming the standard More Like This (MLK) Elasticsearch algorithm. Our results suggest that recommendation systems for science can be significantly improved if we use data about scientists’ search behavior. We make the code and dataset available for other researchers to compare.",
       authors: [
         {
-          name: "Daniel Acuña", url: "https://acuna.io/"
+          name: "Daniel Acuña",
+          url: "https://acuna.io/"
         },
         {
           name: "Zijun Yi"
         },
         {
-          name: "Kartik Nagre", url: "https://www.linkedin.com/in/kartiknagre/"
+          name: "Kartik Nagre",
+          url: "https://www.linkedin.com/in/kartiknagre/"
         },
         {
-          name: "Priya Matnani", url: "https://www.linkedin.com/in/priyamatnani/"
+          name: "Priya Matnani",
+          url: "https://www.linkedin.com/in/priyamatnani/"
         },
         {
           name: "Ziyi Qiu"
@@ -298,13 +303,15 @@ const publicationSection = {
       abstract: "WIP",
       authors: [
         {
-          name: "Lizhen Liang", url: "https://www.linkedin.com/in/lizhenliang/", 
+          name: "Lizhen Liang",
+          url: "https://www.linkedin.com/in/lizhenliang/"
         },
         {
           name: "Zijun Yi"
         },
         {
-          name: "Daniel Acuña", url: "https://acuna.io/"
+          name: "Daniel Acuña",
+          url: "https://acuna.io/"
         }
       ]
     }
