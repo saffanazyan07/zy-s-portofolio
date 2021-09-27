@@ -234,7 +234,6 @@ const bigProjects = {
 };
 
 // Publication Section
-// Include certificates, talks etc
 
 const publicationSection = {
   title: emoji("Publications And Publications 📝 "),
@@ -323,40 +322,45 @@ const publicationSection = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Publications 📝 "),
+  title: emoji("Achievements And Certification 🏆 "),
   subtitle:
     "Achievements, Publications, and Some Cool Stuff that I have done !",
 
   achievementsCards: [
     {
-      title:
-        "“Alexa, is my favorite place the kitchen or garage?”: A method for testing gender biases in commercial AI black boxes",
+      title: "IBM Call for Code Competition 3rd Place",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+        "Our team proposed to study road-line detection using machine learning captured data through a dash-camera. The machine learning technology will capture data on a sunny day, and store the location, direction and captured data to the database. This information will be used to predict road lines on snowy days and alert a driver if the car is off course.",
+      image: require("./assets/images/call4code_logo.png"),
       footerLink: [
-        {name: "Certification"},
-        {name: "Certification"},
-        {name: "Certification"},
-        {name: "Certification"},
-        {name: "Certification"}
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1QuaFosT0iueAR7QAN6tfVP08izNzKWLn/view?usp=sharing"
+        },
+        {
+          name: "Event Site",
+          url: "https://launchpad.syr.edu/call-for-code-winners/"
+        }
       ]
     },
     {
-      title:
-        "“Alexa, is my favorite place the kitchen or garage?”: A method for testing gender biases in commercial AI black boxes",
+      title: "SpeakEZ Project",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
+        "SpeakEZ is a system to help a refugee population use mobile phones to more easily communicate regarding their community needs. Users can record voice messages and the messages will be delivered via the Twilio API to the regugees in their languages.",
+      image: require("./assets/images/speakez_logo.png"),
       footerLink: [
-        {name: "Certification"},
-        {name: "Certification"},
-        {name: "Certification"},
-        {name: "Certification"},
-        {name: "Certification"}
+        {
+          name: "Project Prototype",
+          url: "https://github.com/zyi103/speakez"
+        },
+        {
+          name: "News Reporting",
+          url: "https://news.syr.edu/blog/2015/09/21/knight-foundation-recognizes-speakez-efforts-with-prototype-grant-84693/"
+        }
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
