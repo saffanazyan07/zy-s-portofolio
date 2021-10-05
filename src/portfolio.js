@@ -11,7 +11,7 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Zijun Jim Yi",
+  username: "Zijun yi",
   title: "Hi all, I'm Zijun",
   subTitle: emoji(
     "I am a Syracuse University Applied Data Science Master's student. I enjoy tackling challenges that can only be solved by machine learning and artificial intelligence. I'm currently working on a solution that uses machine learning to detect racial and gender bias in popular automatic speech recognition systems."
