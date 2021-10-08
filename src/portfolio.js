@@ -14,7 +14,7 @@ const greeting = {
   username: "Zijun yi",
   title: "Hi all, I'm Zijun",
   subTitle: emoji(
-    "I am a Syracuse University Applied Data Science Master's student. I enjoy deploy solutions that uses machine learning and automation to discover knowledge in data. I'm currently working on a solution that uses machine learning to detect racial and gender bias in popular automatic speech recognition systems."
+    "I am a Syracuse University Applied Data Science Master's student. I enjoy deploying solutions that use machine learning and automation to discover knowledge in data. I'm currently working on a solution that uses machine learning to detect racial and gender bias in popular automatic speech recognition systems."
   ),
   resumeLink: "https://1drv.ms/b/s!AvPUHjsmnKcag8JXlSNqP10iH_UyTA?e=FmUtHm", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
