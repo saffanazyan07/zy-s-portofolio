@@ -1,7 +1,7 @@
 {
   "homepage": "http://zyi103.github.io/",
   "name": "developerfolio",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "colorthief": "^2.3.0",
