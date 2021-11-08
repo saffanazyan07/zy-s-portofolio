@@ -292,8 +292,9 @@ const publicationSection = {
           url: "https://www.linkedin.com/in/priyamatnani/"
         },
         {
-          name: "Ziyi Qiu"
-        }
+          name: "Link to Manuscript",
+          url: "https://arxiv.org/abs/2110.09663"
+        },
       ]
     }
   ],
