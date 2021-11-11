@@ -428,6 +428,60 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "RedHeadphone",
+      "name": "Red Headphone",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55500003?v=4",
+      "profile": "https://redheadphone.github.io/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "SunitRoy2703",
+      "name": "Sunit Roy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/67560900?v=4",
+      "profile": "https://sunitroy2703.github.io",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "nayabatir1",
+      "name": "Atir Nayab",
+      "avatar_url": "https://avatars.githubusercontent.com/u/91016903?v=4",
+      "profile": "https://github.com/nayabatir1",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "thatdevsherry",
+      "name": "Shehriyar Qureshi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40890226?v=4",
+      "profile": "http://thatdevsherry.pk",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Rispectech",
+      "name": "respectech",
+      "avatar_url": "https://avatars.githubusercontent.com/u/90450963?v=4",
+      "profile": "https://github.com/Rispectech",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "BraydenTW",
+      "name": "Brayden",
+      "avatar_url": "https://avatars.githubusercontent.com/u/47185402?v=4",
+      "profile": "http://braydentw.com",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
