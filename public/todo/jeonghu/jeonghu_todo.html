@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Todo app</title>
+
+  <link rel="stylesheet" href="jeonghu_todo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+  <div id="background-image"></div>
+
+    <div class="header-container">
+      <div class="header">TODO</div>
+      <button class="toggle">
+        <img id="icon" src="../assets/icon-moon.svg" alt="icon">
+      </button>
+    </div> 
+
+  <div class="input-container">
+    <div class="input-box">
+      <div class="oval"></div>
+      <input type="text" id="input-text" placeholder="Create a new todo...">
+    </div>
+  </div>
+  
+  <div class = "main-container"></div>
+  <div class="bottom-container">
+    <div class="remain-item bottom">items left</div>
+    <div class="interaction-container">
+      <button class="filter-button hover" data-filter="all">All</button>
+      <button class="filter-button hover"data-filter="active">Active</button>
+      <button class="filter-button hover"data-filter="completed">Completed</button>
+    </div>
+    <button class="clear bottom filter-button">
+    Clear Completed
+    </button>
+  </div>
+
+  <div class="footer">
+  Drag and drop to reorder list
+  </div>
+</body>
+<script src="jeonghu_todo.js"></script>
+</html>

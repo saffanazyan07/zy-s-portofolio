@@ -1,0 +1,237 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+body {
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#background-image {
+  position: absolute;
+  background-image: url("../assets/bg-desktop-light.jpg");
+  background-position: center;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 300px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-container {
+  width: 541px;
+  height: 48px;
+  flex-shrink: 0;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  color: #fff;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 15px;
+  margin: 0;
+}
+
+.input-container {
+  max-width: 540px;
+  width: 90%;
+  height: 64px;
+  margin-top: 40px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.oval {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
+
+.todo-item .oval:hover circle {
+  stroke: #5df;
+}
+
+#input-text {
+  color: #9495a5;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.25px;
+  border: none;
+  outline: none;
+}
+
+.input-box {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-left: 24px;
+}
+
+.main-container {
+  max-width: 540px;
+  width: 90%;
+  max-height: 439px;
+  min-height: 0px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+  margin-top: 24px;
+}
+
+.bottom-container {
+  max-width: 540px;
+  width: 90%;
+  max-height: 439px;
+  min-height: 50px;
+  flex-shrink: 0;
+  display: flex;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 16px;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.toggle {
+  background: none; /* 배경을 없애거나 단색으로 설정 */
+  border: none; /* 테두리 없애기 */
+  box-shadow: none; /* 그림자 없애기 */
+  padding: 0; /* 기본 여백 없애기 */
+  outline: none; /* 클릭 시 외곽선 없애기 */
+  cursor: pointer; /* 포인터 변경 */
+}
+
+.interaction-container {
+  width: 116px;
+  height: 14px;
+  display: inline-flex;
+  padding-bottom: 4px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 19px;
+  color: #9495a5;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.194px;
+  margin-left: 40px;
+}
+
+.bottom {
+  color: #9495a5;
+  text-align: right;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.194px;
+}
+
+.footer {
+  margin-top: 49px;
+  color: #9495a5;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.194px;
+}
+
+.todo-item {
+  display: flex;
+  width: 492px;
+  height: 24px;
+  flex-shrink: 0;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.todo-text {
+  margin-left: 24px;
+  color: #494c6b;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.25px;
+}
+
+.line {
+  margin-top: 20px;
+  width: 540px;
+  height: 1px;
+  flex-shrink: 0;
+  background: #e3e4f1;
+}
+
+.cross-line {
+  margin-left: auto;
+  display: none;
+}
+
+/* todo-item에 마우스를 올렸을 때만 cross-line 보이기 */
+.todo-item:hover .cross-line {
+  display: block;
+}
+
+.hover:hover {
+  color: #494c6b;
+}
+
+.filter-button {
+  border: none;
+  outline: none;
+  background: none;
+  color: #9495a5;
+  font-family: "Josefin Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.194px;
+}
+
+.clear {
+  color: #9495a5;
+  text-align: right;
+  font-family: "Josefin Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.194px;
+}
+
+.filter-button.active {
+  color: #3a7cfd;
+}
