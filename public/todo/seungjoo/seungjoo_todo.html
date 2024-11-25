@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="seungjoo_todo.css">
+</head>
+<body class="dark-mode"> <!-- Apply the dark-mode class here -->
+  <div class="background"></div>
+  
+  <div class="container">
+    <!-- 제목 및 모드 전환 아이콘 -->
+    <div class="title">
+      TODO
+      <img id="mode-toggle" src="../assets/icon-moon.svg" alt="Moon icon" class="mode-icon">
+    </div>
+    <!-- 새로운 할 일 입력 영역 -->
+    <div class="group">
+      <div class="rectangle">
+        <div class="circle-icon dark-mode-icon">
+          <!-- SVG for checkbox, initially set to light mode color -->
+          <svg id="circle-icon" class="task-check" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+            <circle cx="12.5" cy="12.5" r="12" stroke="none" fill="#FFF"/>
+          </svg>
+        </div>              
+        <input id="new-todo" type="text" class="group-input" placeholder="Create a new todo…">
+      </div>
+    </div>
+    <!-- 할 일 목록 및 필터 그룹 -->
+    <div class="task-group">
+      <div class="task-rectangle">
+        <div class="task-list" id="todo-list"></div>
+        <div class="task-info filter-group">
+          <span class="items-left" id="remaining-count">0 items left</span>
+          <span class="filter all active" id="filter-all">All</span>
+          <span class="filter" id="filter-active">Active</span>
+          <span class="filter" id="filter-completed">Completed</span>
+          <span class="clear-completed" id="clear-completed">Clear Completed</span>
+        </div>
+      </div>
+      <div class="reorder-text">Drag and drop to reorder list</div>
+    </div>
+  </div>
+  <script src="seungjoo_todo.js"></script>
+</body>
+</html>

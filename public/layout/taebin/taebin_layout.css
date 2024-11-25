@@ -1,0 +1,259 @@
+/* 기본 스타일 */
+body {
+  font-family: "League Spartan", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.container {
+  width: 100%; /* 전체화면 시 기본 스타일 유지 */
+  height: 800px;
+  background: #fff;
+  position: relative;
+  margin: 0;
+}
+.background1,
+.background2 {
+  position: absolute;
+}
+.background1 {
+  top: 0;
+  left: 0;
+}
+.background2 {
+  bottom: 0;
+  right: 0;
+}
+
+.box1 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  max-width: 70%;
+  height: 245px;
+  top: 118px;
+  left: 11%;
+}
+
+.titles {
+  max-width: 445px;
+  min-height: 245px;
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: 56px;
+  color: #512051;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -2px;
+}
+
+.subtitle {
+  font-size: 19px;
+  color: #927b91;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: -0.633px;
+  margin-top: 16px;
+}
+
+.review_box {
+  display: grid;
+  position: relative;
+  grid-template-rows: repeat(3, 56px);
+  row-gap: 16px;
+  margin-top: 27px;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  max-width: 445px;
+  height: 56px;
+  padding: 0 15px;
+  border-radius: 8px;
+  background: #f7f2f7;
+}
+
+.review_text {
+  font-size: 17px;
+  color: #512051;
+  font-weight: 700;
+  margin-left: 32.45px;
+}
+
+.people_boxes {
+  display: flex;
+  position: relative;
+  top: 191px;
+  justify-content: center;
+}
+
+.people_box {
+  width: 292px;
+  height: 199px;
+  margin: 0 15px;
+  padding: 0 29px 35px;
+  border-radius: 8px;
+  background: #512051;
+}
+
+.person {
+  display: flex;
+  position: relative;
+  margin-top: 40px;
+  width: 162px;
+  height: 40px;
+  gap: 15px;
+}
+
+.person_img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: lightgray;
+}
+
+.p_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.p_name {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.p_des {
+  font-size: 16px;
+  color: #ee69a4;
+}
+
+.p_mention {
+  position: relative;
+  margin-top: 31px;
+  font-size: 17px;
+  color: #fff;
+  line-height: 22px;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+    height: 1530px;
+  }
+
+  .background1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .background2 {
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+  }
+
+  .box1 {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 39px;
+    left: 15%;
+  }
+
+  .titles {
+    max-width: 327px;
+    min-height: auto;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 19px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .review_box {
+    margin-top: 0;
+    row-gap: 16px;
+  }
+
+  .review {
+    padding: 0 55px;
+    height: auto;
+  }
+
+  .people_boxes {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+  }
+
+  .box2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 221px;
+  }
+}
+
+@media (max-width: 500px) {
+  .box1 {
+    left: 0;
+    max-width: 100%;
+    height: auto;
+  }
+  .titles {
+    max-width: 88%;
+  }
+  .review_box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+  .review {
+    max-width: 100%;
+    height: 47px;
+    flex-direction: column;
+    padding: 16px 0 15px;
+    row-gap: 15px;
+  }
+  .review_text {
+    margin: 0 55px;
+    text-align: center;
+    font-size: 17px;
+    margin: 0 55px;
+  }
+
+  .box2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    left: 0%;
+    top: 159px;
+    align-items: center;
+  }
+
+  .people_boxes {
+    top: 0;
+    width: 88%;
+  }
+  .people_box {
+    width: 88%;
+    height: auto;
+    padding: 0 24px 32px;
+    row-gap: 16px;
+  }
+}

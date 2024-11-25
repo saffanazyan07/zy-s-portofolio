@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="eunseo_todo.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+    <!-- 배경 이미지 고정 div 추가 -->
+    <div class="background-image"></div>
+    
+    <div class="todo-app">
+        <header class="app-header">
+            <h1>TODO</h1>
+            <button id="themeToggle" class="theme-toggle-button">
+                <img id="themeIcon" src="../assets/icon-moon.svg" alt="Toggle Theme" />
+            </button>
+        </header>
+    
+        <div class="todo-input-container">
+            <div class="checkbox-container">
+                <input type="checkbox" id="newTodoCheckbox">
+                <label for="newTodoCheckbox"></label>
+            </div>
+            <input type="text" id="todoInput" placeholder="Create a new todo...">
+        </div>
+    
+        <div class="todo-list-container">
+            <ul id="todoList" class="todo-list"></ul>
+            <footer class="app-footer">
+                <span id="remainingCount">0 items left</span>
+                <div class="filter-buttons">
+                    <button id="filterAll" class="filter-button active">All</button>
+                    <button id="filterActive" class="filter-button">Active</button>
+                    <button id="filterCompleted" class="filter-button">Completed</button>
+                </div>
+                <button id="clearCompleted" class="clear-completed-button">Clear Completed</button>
+            </footer>
+        </div>
+        <p id="dragDropInfo">Drag and drop to reorder list</p>
+    </div>
+    
+    <script src="eunseo_todo.js"></script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+/* 기본 스타일 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Light 테마 기본 설정 */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: #fafafa;
+  font-family: "Josefin Sans", sans-serif;
+  position: relative;
+  color: #494c6b;
+}
+
+/* Dark 테마 */
+body.dark {
+  background-color: #25273d;
+  color: #c8cbe7;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 83px;
+  width: 90%;
+  max-width: 600px;
+  position: absolute;
+  z-index: 2; /* 배경 위에 오도록 설정 */
+  height: 100vh; /* 전체 화면 높이 */
+  overflow-y: auto; /* 스크롤 가능 */
+}
+
+/* 기본 Light 배경 */
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background-image: url("../assets/bg-desktop-light.jpg"); /* Light 모드 배경 기본 설정 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+/* Dark 모드 */
+body.dark #background {
+  background-image: url("../assets/bg-desktop-dark.jpg"); /* Dark 모드 배경 */
+}
+
+/* 헤더 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  color: #fff;
+  font-size: 40px;
+  letter-spacing: 15px;
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#theme-icon {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* TODO 입력 영역 */
+.add-todo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+  margin-top: 40px;
+}
+
+input {
+  color: #494c6b;
+}
+
+.add-todo .oval {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.oval {
+  margin-top: 2px;
+  margin-right: 24px;
+}
+
+#new-todo {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+/* TODO 리스트 */
+.todo-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+/* TODO 아이템 스타일 */
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 64px;
+  background: #fff; /* Light 모드 */
+  border-radius: 5px;
+  flex-shrink: 0;
+  padding: 0 24px; /* 좌우 패딩 추가 */
+  /*position: relative;*/
+}
+
+.cancel {
+  width: 16px;
+  height: 16px;
+  margin-left: auto;
+  display: flex; /* 기본적으로 숨김 */
+  cursor: pointer; /* 포인터 커서 */
+  stroke: #fff;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  flex-shrink: 0;
+  background: #e3e4f1;
+}
+
+body.dark .todo {
+  background: #393a4b; /* Dark 모드 */
+}
+
+.todo span {
+  color: #494c6b;
+  font-family: "Josefin Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.25px;
+}
+
+body.dark .todo span {
+  color: #c8cbe7; /* Dark 모드 */
+}
+
+/* 메뉴 */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  flex-shrink: 0;
+  padding: 16px 0;
+  font-size: 14px;
+  color: #9495a5;
+  font-weight: 400;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+}
+
+.todo.dragging {
+  opacity: 0.5; /* 드래그 중일 때 투명도 변경 */
+  background: #f0f0f0; /* 드래그 중일 때 배경색 변경 */
+}
+
+#items-left {
+  margin-left: 24px;
+}
+
+#clear-completed {
+  margin-right: 24px;
+}
+
+.filters {
+  display: flex;
+  gap: 16px;
+}
+
+.filter-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+.filter-btn.active {
+  color: #3a7cfd; /* 활성화된 상태 색상 */
+}
+
+/* hover 효과 */
+#theme-toggle:hover,
+.filter-btn:hover,
+#clear-completed:hover {
+  color: #494c6b; /* hover 시 색 변경 */
+}
+
+.todo-box .oval:hover circle {
+  stroke: #5df; /* oval hover 시 테두리 색상 */
+}
+
+/* 텍스트에 hover했을 때 Cancel 버튼 색상 변경 */
+.todo:hover .cancel {
+  stroke: #494c6b; /* hover 시 색상 변경 (원하는 색상으로 설정) */
+}
+
+body.dark .todo:hover {
+  stroke: #5b5e7e; /* Dark 모드 */
+}
+
+/* 기존 hover 효과 제거 */
+.add-todo .oval:hover {
+  stroke: none; /* hover 시 변경되는 스타일 제거 */
+}
+
+/* 다크 모드 */
+body.dark .menu {
+  color: #5b5e7e;
+}
+
+body.dark .menu {
+  background: #25273d;
+  box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.5);
+}
+
+body.dark .line {
+  background: #393a4b;
+}
+
+body.dark .cancel {
+  stroke: #25273d;
+}
+
+body.dark #theme-toggle:hover,
+body.dark .filter-btn:hover,
+body.dark #clear-completed:hover {
+  color: #e3e4f1; /* 다크 모드 hover 시 색 변경 */
+}
+
+body.dark .filter-btn.active {
+  color: #3a7cfd; /* 클릭된 필터 버튼 색상 */
+}
+
+body.dark .add-todo {
+  border-radius: 5px;
+  background: #25273d;
+  box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.5);
+}
+
+dark-oval:hover circle {
+  stroke: #5df; /* oval hover 시 테두리 색상 */
+}
+
+body.dark .todo {
+  border-radius: 5px;
+  background: #25273d;
+}
+
+body.dark #new-todo {
+  background: #25273d;
+}
+
+body.dark input {
+  color: #c8cbe7;
+}

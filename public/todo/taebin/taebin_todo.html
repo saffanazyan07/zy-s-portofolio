@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="taebin_todo.css">
+</head>
+<body>
+    <div class="app-container">
+        <img src="../assets/images/bg-desktop-light.jpg" alt="Header Background" class="header-bg">
+        <header class="header">
+            <h1>T O D O</h1>
+            <button id="toggle-theme">
+                <img id="theme-icon" src="../assets/images/icon-moon.svg" alt="Toggle Theme">
+            </button>            
+        </header>
+        
+        <div class="todo-input">
+            <div class="circle"></div>
+            <input type="text" id="new-todo" placeholder="Create a new todo...">
+        </div>
+        <ul id="todo-list"></ul>
+        
+        <div class="controls">
+            <span id="remaining-count" class="ctrl-button">0 items left</span>
+            <button id="show-all" class="ctrl-button">All</button>
+            <button id="show-active" class="ctrl-button">Active</button>
+            <button id="show-completed" class="ctrl-button">Completed</button>
+            <button id="clear-completed" class="ctrl-button">Clear Completed</button>
+        </div>
+    </div>
+    <script src="taebin_todo.js"></script>
+</body>
+</html>

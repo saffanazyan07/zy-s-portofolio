@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO App</title>
+    <link rel="stylesheet" href="sohyun_todo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 배경 이미지 -->
+    <div id="background"></div>
+
+    <!-- 컨테이너 -->
+    <div class="container">
+        <!-- Header 영역 -->
+        <header class="header">
+            <h1 class="title">T O D O</h1>
+            <button id="theme-toggle">
+                <img id="theme-icon" src="../assets/icon-moon.svg" alt="Toggle Theme">
+            </button>
+        </header>
+
+        <!-- TODO 입력 영역 -->
+        <div class="add-todo">
+            <div class="oval"></div>
+            <input type="text" id="new-todo" placeholder="Create a new todo...">
+        </div>
+
+        <!-- TODO 리스트 박스 -->
+        <div class="todo-box">
+            <!-- 여기서 추가된 TODO 리스트가 표시됩니다 -->
+        </div>
+
+        <!-- 메뉴 영역 -->
+        <footer class="menu">
+            <span id="items-left">0 items left</span>
+            <div class="filters">
+                <button class="filter-btn" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+            <button class="filter-btn" id="clear-completed">Clear Completed</button>
+        </footer>
+    </div>
+
+    <script src="sohyun_todo.js"></script>
+</body>
+</html>

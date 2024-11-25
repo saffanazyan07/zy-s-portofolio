@@ -1,0 +1,177 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+body {
+  background-image: url("bg-pattern-top-desktop.svg"),
+    url("bg-pattern-bottom-desktop.svg");
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 1440px; /* 페이지 너비 설정 */
+  height: 800px; /* 페이지 높이 설정 */
+  margin: 0 auto; /* 수평 중앙 정렬 */
+}
+
+/* 폰트 설정 */
+.title {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700; /* LeagueSpartan-Bold */
+  font-size: 56px; /* 제목 폰트 크기 */
+}
+
+.description {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 500; /* LeagueSpartan-Medium */
+  font-size: 19px; /* 설명 폰트 크기 */
+}
+
+.star-text {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700; /* LeagueSpartan-Bold */
+  font-size: 17px; /* 별 박스 텍스트 폰트 크기 */
+}
+
+/* 제목과 설명의 좌측 및 상단 여백 조정 */
+.title-container {
+  margin-left: 140px; /* 좌측 여백을 20px 늘림 */
+  margin-top: 88px; /* 제목의 상단 여백 */
+}
+
+/* 설명 텍스트 하단 여백 조정 */
+.description {
+  margin-bottom: 71px; /* 설명과 평론가 섹션 사이의 여백 */
+}
+
+/* 평론가 섹션의 하단 여백 조정 */
+.critics-section {
+  margin-bottom: 132px; /* 평론가 섹션과 페이지 끝 사이의 하단 여백 */
+  margin-right: 200px;
+  gap: 20px; /* 평론가 박스 사이의 간격 */
+}
+
+/* 별 박스의 커스텀 간격 설정 */
+.star-box-1,
+.star-box-2,
+.star-box-3 {
+  margin-left: 20px !important; /* 별 박스를 오른쪽으로 20px 이동 */
+}
+
+/* 별 박스의 상단 여백 조정 */
+.star-box-1 {
+  margin-top: 200px; /* 첫 번째 박스의 상단 여백 */
+}
+.star-box-2,
+.star-box-3 {
+  margin-top: 16px; /* 박스들 사이의 간격 */
+}
+
+/* 평론가 박스의 너비와 높이 */
+.critic-box {
+  width: 350px;
+  height: 234px;
+  margin-left: 120px; /* 좌측 여백을 20px 늘림 */
+}
+
+/* 평론가 섹션의 간격 조정 */
+.critics-section {
+  margin-bottom: 132px; /* 평론가 섹션과 페이지 끝 사이의 하단 여백 */
+  gap: 50px; /* 평론가 박스 사이의 간격 */
+}
+
+.bg-custom-purple {
+  background-color: rgb(81, 32, 81);
+}
+
+/* 모바일 디자인을 위한 미디어 쿼리 */
+@media (max-width: 738px) {
+  header {
+    flex-direction: column; /* 세로로 정렬 */
+    align-items: center;
+    gap: 32px; /* title-container와 space-y-4 사이의 간격 */
+  }
+
+  /* title-container를 중앙에 배치 */
+  .title-container {
+    text-align: center;
+    margin-left: 40px; /* 오른쪽으로 20px 이동 */
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* 제목과 설명을 세로로 정렬 */
+  .title-container h1,
+  .description {
+    text-align: center;
+    width: 100%; /* 항상 가운데 정렬되도록 설정 */
+  }
+
+  /* 설명 텍스트 줄 바꿈 */
+  .description {
+    margin: 17px auto 0;
+    margin-left: 0px; /* 오른쪽으로 20px 이동 */
+    margin-right: 24px;
+    white-space: normal; /* 자연스러운 줄 바꿈 */
+  }
+
+  .space-y-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 70px; /* 왼쪽 마진을 critics-section과 동일하게 설정 */
+  }
+
+  .star-box-1,
+  .star-box-2,
+  .star-box-3 {
+    margin-left: 200px; /* 20px 증가 */
+    margin-right: 24px;
+    margin-top: 16px;
+    text-align: center;
+  }
+
+  /* 별과 텍스트를 세로로 정렬 */
+  .star-box-1,
+  .star-box-2,
+  .star-box-3 {
+    flex-direction: column; /* 세로 정렬 */
+    align-items: center; /* 가운데 정렬 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+
+  /* 별과 텍스트 사이 간격 */
+  .star-box-1 p,
+  .star-box-2 p,
+  .star-box-3 p {
+    margin-top: 8px; /* 별과 텍스트 사이의 간격 조정 */
+  }
+
+  /* 평론가 섹션 세로 배열 및 중앙 정렬 */
+  .critics-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 49px;
+    margin-left: 70px;
+    gap: 16px;
+  }
+
+  .critic-box {
+    margin: 0;
+    width: 350px;
+    height: 234px;
+  }
+
+  /* 제목 중앙 정렬 */
+  .title {
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 64px; /* 20px 증가 */
+    margin-right: 24px;
+  }
+}

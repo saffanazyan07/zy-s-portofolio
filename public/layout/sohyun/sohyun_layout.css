@@ -1,0 +1,223 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  position: relative;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.bg-pattern-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bg-pattern-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100vw; /* 화면 너비에 맞추기 */
+  height: auto; /* 비율 유지 */
+  max-width: none; /* 기본 제한 해제 */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  padding-left: 165px;
+}
+
+.top-section {
+  padding-top: 118px;
+  display: flex;
+  align-items: flex-start;
+  gap: 150px;
+}
+
+.text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 445px;
+}
+
+.main-heading {
+  font-size: 56px;
+  color: #512051;
+  font-weight: 700;
+}
+
+.sub-heading {
+  font-size: 19px;
+  color: #927b91;
+  line-height: 1.3;
+}
+
+.review-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.box {
+  background-color: #f7f2f7;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  width: 445px;
+  height: 56px;
+}
+
+.star {
+  margin-right: 10px;
+}
+
+.star1 {
+  margin-right: 10px;
+}
+
+.rating-text {
+  margin-left: 32px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #512051;
+}
+
+.horizontal-boxes {
+  display: flex;
+  gap: 30px;
+}
+
+.horizontal-box {
+  background-color: #512051;
+  border-radius: 8px;
+  padding: 32px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: white;
+}
+
+.customer-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.customer-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.customer-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-name {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.customer-status {
+  color: #ee69a4;
+  font-size: 14px;
+}
+
+.review-text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 375px) {
+  body {
+    width: 375px;
+    height: 1530px;
+  }
+  .bg-pattern-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .bg-pattern-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100vw; /* 화면 너비에 맞추기 */
+    height: auto; /* 비율 유지 */
+    max-width: none; /* 기본 제한 해제 */
+  }
+  .content {
+    display: flex;
+    gap: 70px;
+    padding-left: 132px;
+  }
+  .top-section {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+  .text-group {
+    display: flex;
+    flex-wrap: block;
+    gap: 17px;
+    width: 327px;
+  }
+  .main-heading {
+    font-size: 40px;
+    text-align: center;
+  }
+  .sub-heading {
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 39px;
+  }
+  .star {
+    align-items: center;
+    padding-bottom: 15px;
+  }
+  .star1 {
+    align-items: center;
+    padding-bottom: 15px;
+    margin-left: 75px;
+  }
+  .box {
+    padding: 16px;
+    display: block;
+    align-items: center;
+    width: 327px;
+    height: 78px;
+  }
+  .rating-text {
+    font-size: 17px;
+    font-weight: 700;
+    color: #512051;
+    align-items: center;
+    text-align: center;
+    margin-left: 0px;
+  }
+  .horizontal-boxes {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+  }
+}

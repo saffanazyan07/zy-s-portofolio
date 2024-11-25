@@ -1,0 +1,299 @@
+body {
+  margin: 0;
+  background-color: #fff;
+  font-family: "League Spartan", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.desktop {
+  width: 100%;
+  height: 100vh;
+  padding: 0 15px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.background1,
+.background2 {
+  opacity: 0.05;
+  position: absolute;
+}
+
+.background1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50vw; /* 화면 너비에 맞추기 */
+  height: auto; /* 비율 유지 */
+  max-width: none; /* 기본 제한 해제 */
+}
+
+.background2 {
+  position: absolute;
+  width: 30vw; /* 화면 너비에 맞추기 */
+  height: auto; /* 비율 유지 */
+  top: 0;
+  left: 0;
+}
+
+.top-container {
+  display: flex;
+  margin-top: 118px;
+  margin-left: 165px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column; /* 텍스트를 세로로 쌓기 */
+  align-items: flex-start; /* 왼쪽 정렬 */
+}
+
+.main-text {
+  color: #512051;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 48px;
+  width: 445px;
+  margin: 0; /* 여백 제거 */
+}
+
+.sub-text {
+  color: #927b91;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 25px;
+  width: 445px;
+  margin-top: 20px; /* 텍스트 간격 */
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column; /* 박스들을 가로로 배치 */
+  gap: 17px; /* 박스 간 간격 */
+  margin-left: 125px; /* 텍스트 컨테이너와의 간격을 125px로 설정 */
+}
+
+.box {
+  width: 445px;
+  height: 56px;
+  border-radius: 8px;
+  background-color: #f7f2f7;
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+  box-sizing: border-box;
+}
+
+.box img {
+  margin-right: 20px;
+}
+
+.box-text {
+  color: #512051;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.group {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px; /* 그룹 박스와의 간격 */
+  margin-left: 165px; /* 그룹 박스를 왼쪽에서 165px 떨어진 곳에서 시작 */
+}
+
+.group-box {
+  width: 360px; /* 그룹 박스 크기 조정 */
+  height: 234px;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: #512051;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.review-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 16px;
+}
+
+.review-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-name {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.review-verifier {
+  color: #ee69a4;
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 4px;
+}
+
+.review-text {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.304px;
+}
+
+@media (max-width: 375px) {
+  .desktop {
+    width: 375px;
+    height: 1530px;
+  }
+  .background1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150vw; /* 화면 너비에 맞추기 */
+    height: auto; /* 비율 유지 */
+    max-width: none; /* 기본 제한 해제 */
+  }
+  .background2 {
+    position: absolute;
+    width: 130vw; /* 화면 너비에 맞추기 */
+    top: 0;
+    left: 0;
+  }
+
+  .top-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: auto; /* 중앙 정렬 */
+    margin-right: auto; /* 중앙 정렬 */
+  }
+
+  .text-container {
+    align-items: center;
+    margin: 82px auto 0 auto; /* 중앙 정렬 */
+  }
+
+  .main-text {
+    text-align: center;
+    font-size: 40px;
+    line-height: 32px;
+    width: 327px;
+    height: 102px;
+  }
+
+  .sub-text {
+    font-size: 20px;
+    line-height: 25px;
+    width: 327px;
+    height: 100px;
+    margin-top: 17px;
+    text-align: center;
+  }
+
+  .box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 39px;
+    margin-left: auto; /* 중앙 정렬 */
+    margin-right: auto; /* 중앙 정렬 */
+  }
+
+  .box {
+    width: 327px;
+    height: auto;
+    border-radius: 8px;
+    background-color: #f7f2f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+  }
+
+  .box img {
+    margin-bottom: 15.23px;
+  }
+
+  .box-text {
+    color: #512051;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .group {
+    display: flex;
+    width: 327px;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 40px;
+    align-items: center;
+    margin-left: auto; /* 중앙 정렬 */
+    margin-right: auto; /* 중앙 정렬 */
+  }
+  .group-box {
+    width: 320px; /* 기존 350px에서 줄임 */
+    padding: 24px; /* 기존 32px에서 줄임 */
+    border-radius: 8px;
+    background-color: #512051;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+  }
+  .review-header {
+    display: flex; /* 이미지와 리뷰 정보를 가로로 배치 */
+    align-items: center; /* 수직 중앙 정렬 */
+    margin-bottom: 16px; /* review-text와의 간격 */
+  }
+
+  .review-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-right: 16px; /* 이미지와 이름 사이의 간격 */
+  }
+
+  .review-info {
+    display: flex;
+    flex-direction: column; /* 이름과 검증자를 세로로 배치 */
+  }
+
+  .review-name {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0; /* 여백 제거 */
+  }
+
+  .review-verifier {
+    color: #ee69a4;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 4px; /* 이름과 검증자 사이의 간격 */
+  }
+
+  .review-text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.304px;
+  }
+}

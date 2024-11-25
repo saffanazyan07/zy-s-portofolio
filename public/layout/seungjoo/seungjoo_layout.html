@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>웹사이트 레이아웃</title>
+    <link rel="stylesheet" href="seungjoo_layout.css">
+</head>
+<body>
+    <div class="desktop">
+        <!-- 배경 1 -->
+        <svg class="background1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1085 673" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 673C0 673 111.534 442.099 422 381C732.466 319.901 614.94 258.276 767.47 135.975C920 13.6747 1085 0 1085 0V673H0Z" fill="url(#paint0_linear_0_64)"/>
+            <defs>
+                <linearGradient id="paint0_linear_0_64" x1="1607.81" y1="368.129" x2="1076.12" y2="-543.631" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#8A4389" stop-opacity="0.01"/>
+                    <stop offset="1" stop-color="#512051"/>
+                </linearGradient>
+            </defs>
+        </svg>
+
+        <!-- 배경 2 -->
+        <svg class="background2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 584 362" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M584 0C584 0 523.967 124.2 356.859 157.064C189.751 189.928 253.009 223.076 170.91 288.86C88.8111 354.645 0 362 0 362V0H584Z" fill="url(#paint0_linear_0_65)"/>
+            <defs>
+                <linearGradient id="paint0_linear_0_65" x1="-281.401" y1="163.987" x2="4.4935" y2="654.58" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#8A4389" stop-opacity="0.01"/>
+                    <stop offset="1" stop-color="#512051"/>
+                </linearGradient>
+            </defs>
+        </svg>
+
+        <!-- 텍스트와 박스들을 묶는 컨테이너 -->
+        <div class="top-container">
+            <!-- 메인 텍스트 -->
+            <div class="text-container">
+                <div class="main-text">10,000+ of our users love our products.</div>
+                <div class="sub-text">We only provide great products combined with excellent customer service. See what our satisfied customers are saying about our services.</div>
+            </div>
+            
+            <!-- 박스들 -->
+            <div class="box-container">
+                <div class="box">
+                    <img src="../assets/Group 4.png" alt="Star">
+                    <div class="box-text">Rated 5 Stars in Reviews</div>
+                </div>
+                <div class="box">
+                    <img src="../assets/Group 4.png" alt="Star">
+                    <div class="box-text">Rated 5 Stars in Report Guru</div>
+                </div>
+                <div class="box">
+                    <img src="../assets/Group 4.png" alt="Star">
+                    <div class="box-text">Rated 5 Stars in BestTech</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 그룹 박스 -->
+        <div class="group">
+            <div class="group-box">
+                <div class="review-header">
+                    <img src="../assets/image-colton.jpg" alt="Colton Smith" class="review-image">
+                    <div class="review-info">
+                        <div class="review-name">Colton Smith</div>
+                        <div class="review-verifier">Verified Buyer</div>
+                    </div>
+                </div>
+                <div class="review-text">"We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"</div>
+            </div>
+            <div class="group-box">
+                <div class="review-header">
+                    <img src="../assets/image-irene.jpg" alt="Irene" class="review-image">
+                    <div class="review-info">
+                        <div class="review-name">Irene</div>
+                        <div class="review-verifier">Verified Buyer</div>
+                    </div>
+                </div>
+                <div class="review-text">“Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery.”</div>
+            </div>
+            <div class="group-box">
+                <div class="review-header">
+                    <img src="../assets/image-anne.jpg" alt="Anne" class="review-image">
+                    <div class="review-info">
+                        <div class="review-name">Anne</div>
+                        <div class="review-verifier">Verified Buyer</div>
+                    </div>
+                </div>
+                <div class="review-text">“Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!”</div>
+            </div>
+        </div>        
+    </div>
+</body>
+</html>

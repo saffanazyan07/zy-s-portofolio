@@ -1,0 +1,258 @@
+.container {
+  display: flex;
+  width: 100%;
+  padding: var(--spacing-1600, 128px) var(--spacing-600, 48px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-100, 8px);
+  background: var(--color-stone-100, #f3e5d7);
+}
+
+.white-back {
+  display: flex;
+  width: 736px;
+  padding: var(--spacing-500, 40px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex-shrink: 0;
+  border-radius: var(--spacing-300, 24px);
+  background: var(--color-white, #fff);
+}
+
+.main-image {
+  height: 300px;
+  align-self: stretch;
+  border-radius: var(--spacing-150, 12px);
+  background: url(../assets/images/image-omelette.jpeg) lightgray 50% / cover
+    no-repeat;
+}
+
+.title-text {
+  align-self: stretch;
+  color: var(--color-stone-900, #312e2c);
+  font-family: "Young Serif", Regular;
+  font-size: var(--font-size-desktop-text-preset-1, 40px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.content {
+  align-self: stretch;
+  color: var(--color-stone-600, #5f564d);
+  font-family: "Outfit";
+  font-size: var(--font-size-desktop-text-preset-4, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.pink-box {
+  display: flex;
+  padding: var(--spacing-300, 24px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-200, 16px);
+  align-self: stretch;
+  border-radius: var(--spacing-150, 12px);
+  background: var(--color-rose-50, #fff7fb);
+}
+
+.pink-title {
+  align-self: stretch;
+  color: var(--color-rose-800, #7a284e);
+  font-family: "Outfit";
+  font-size: var(--font-size-desktop-text-preset-3, 20px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.pink-text {
+  flex: 1 0 0;
+  color: var(--color-stone-600, #5f564d);
+  font-family: "Outfit";
+  font-size: var(--font-size-desktop-text-preset-4, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  display: flex;
+  padding-left: var(--spacing-100, 8px);
+  align-items: center;
+  gap: var(--spacing-200, 16px);
+  align-self: start;
+}
+
+.pink-tt {
+  flex: 1 0 0;
+  color: var(--color-stone-600, #5f564d);
+  font-family: "Outfit";
+  font-size: var(--font-size-desktop-text-preset-4, 16px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.p-ellipse {
+  width: 4px;
+  height: 4px;
+  flex-shrink: 0;
+  display: flex;
+  padding-left: var(--spacing-100, 8px);
+  align-items: center;
+  gap: var(--spacing-200, 16px);
+  align-self: center;
+  fill: var(--color-rose-800, #7a284e);
+}
+.p-ellipse-lo {
+  display: flex;
+  width: var(--spacing-200, 16px);
+  align-items: center;
+  gap: var(--spacing-100, 8px);
+  align-self: center;
+}
+.C_title {
+  color: var(--color-brown-800, #854632);
+  font-family: "Young Serif", Regular;
+  font-size: var(--font-size-desktop-text-preset-2, 28px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+.spacing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-300, 30px);
+  align-self: stretch;
+}
+.i-ellipse {
+  fill: var(--color-brown-800, #854632);
+}
+.i-ellipse-lo {
+  display: flex;
+  width: var(--spacing-200, 16px);
+  align-items: center;
+  gap: var(--spacing-100, 8px);
+  align-self: center;
+}
+.Ingre-text {
+  color: var(--color-stone-600, #5f564d);
+  font-family: "Outfit";
+  font-size: var(--font-size-desktop-text-preset-4, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  display: flex;
+  padding-left: var(--spacing-100, 8px);
+  align-items: center;
+  gap: var(--spacing-200, 16px);
+  align-self: start;
+}
+.bar {
+  width: 730px;
+  height: 1px;
+  background: var(--color-stone-150, #e3ddd7);
+}
+.ins-spacing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-300, 24px);
+  align-self: stretch;
+}
+.ins-text {
+  flex: 1 0 0;
+  color: var(--color-stone-600, #5f564d);
+  font-family: "Outfit";
+  font-size: var(--font-size-desktop-text-preset-4, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.ins-title {
+  color: var(--color-stone-600, #5f564d);
+  font-family: "Outfit";
+  font-size: var(--font-size-desktop-text-preset-4, 16px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.N-intro {
+  align-self: stretch;
+  color: var(--color-stone-600, #5f564d);
+  font-family: "Outfit";
+  font-size: var(--font-size-desktop-text-preset-4, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.text-box {
+  display: flex;
+  padding: 0px var(--spacing-400, 32px);
+  align-items: center;
+  gap: var(--spacing-200, 16px);
+  align-self: stretch;
+}
+.N-title {
+  flex: 1 0 0;
+  color: var(--color-brown-800, #854632);
+  font-family: "Outfit";
+  font-size: var(--font-size-desktop-text-preset-4, 16px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.N-text {
+  flex: 1 0 0;
+  color: var(--color-stone-600, #5f564d);
+  font-family: "Outfit";
+  font-size: var(--font-size-desktop-text-preset-4, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+
+ol li {
+  margin-left: 0; /* 기본 여백 초기화 */
+  padding-left: 20px; /* 번호와 내용 사이의 간격 조정 */
+}
+
+ol li::marker {
+  font-size: 1em; /* 번호의 크기 조정 (선택 사항) */
+  color: #854632; /* 번호 색상 */
+  font-weight: bold; /* 번호 굵기 */
+  padding-right: 10px; /* 번호와 내용 사이의 간격 조정 */
+}
+
+li {
+  margin: 12px;
+}
+
+:root {
+  --spacing-100: 8px;
+  --spacing-150: 12px;
+  --spacing-300: 24px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-1600: 128px;
+
+  --color-stone-100: #f3e5d7;
+  --color-stone-150: #e3ddd7;
+  --color-stone-600: #5f564d;
+  --color-stone-900: #312e2c;
+  --color-rose-50: #fff7fb;
+  --color-rose-800: #7a284e;
+  --color-brown-800: #854632;
+  --color-white: #fff;
+
+  --font-size-desktop-text-preset-1: 40px;
+  --font-size-desktop-text-preset-2: 28px;
+  --font-size-desktop-text-preset-3: 20px;
+  --font-size-desktop-text-preset-4: 16px;
+}

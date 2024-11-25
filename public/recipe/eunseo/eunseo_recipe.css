@@ -1,0 +1,244 @@
+:root {
+  --spacing150: 8px; /* Adjust the value as needed */
+  --spacing300: 16px; /* Adjust the value as needed */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f3e5d7;
+  width: 1440px;
+  height: 1959px;
+  font-family: "Outfit", sans-serif;
+}
+
+.recipe-container {
+  width: 1440px;
+  height: 1959px;
+}
+
+.recipe-box {
+  background-color: #ffffff;
+  width: 736px;
+  margin-top: 128px;
+  margin-left: 352px;
+  position: relative;
+  border-radius: var(--spacing300);
+}
+
+.recipe-image {
+  width: 656px;
+  height: 300px;
+  margin-top: 40px;
+  margin-left: 40px;
+  border-radius: var(--spacing150);
+}
+
+.simple-omelette-recipe {
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.simple-omelette-recipe h1 {
+  font-family: "Young Serif", serif;
+  font-size: font-size/desktop/text-preset-1;
+  color: #312e2c;
+  line-height: 40px;
+  margin-bottom: 24px;
+}
+
+.simple-omelette-recipe p {
+  color: #5f564d;
+  font-size: font-size/desktop/text-preset-4;
+  line-height: 24px;
+}
+
+.preparation-time-box {
+  margin-top: 28px;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: #fff7fb;
+  padding-left: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: var(--spacing300);
+}
+
+.preparation-time-box h2 {
+  font-family: "Outfit", sans-serif;
+  font-size: font-size/desktop/text-preset-3;
+  line-height: 20px;
+  color: #7a284e;
+  margin-bottom: 8px;
+}
+
+.preparation-time-box ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.preparation-time-box li {
+  color: #5f564d;
+  margin-bottom: 4px;
+  font-size: font-size/desktop/text-preset-4;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.preparation-time-box li svg {
+  margin-right: 40px;
+}
+
+.preparation-time-box li strong {
+  font-weight: 700;
+}
+
+.ingredients-box {
+  margin-top: 32px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.ingredients-box h2 {
+  font-family: "Young Serif", serif;
+  color: #854632;
+  line-height: 40px;
+  margin-bottom: 16px;
+}
+
+.ingredients-box ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ingredients-box li {
+  font-size: font-size/desktop/text-preset-4;
+  line-height: 24px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  color: #5f564d;
+}
+
+.ingredients-box li svg {
+  margin-right: 40px;
+}
+
+.line {
+  width: 656px;
+  margin-top: 32px;
+  margin-left: 40px;
+  border: none;
+  border-top: 1px solid #312e2c;
+}
+
+.instructions-box {
+  margin-top: 32px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.instructions-box h2 {
+  font-family: "Young Serif", serif;
+  color: #854632;
+  line-height: 40px;
+  margin-bottom: 16px;
+}
+
+.instructions-box ol {
+  list-style-type: none;
+  counter-reset: list-counter;
+  padding: 0;
+}
+
+.instructions-box ol li {
+  position: relative;
+  margin-bottom: 12px;
+  padding-left: 40px;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  color: #5f564d;
+}
+
+.instructions-box ol li::before {
+  counter-increment: list-counter;
+  content: counter(list-counter) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #854632;
+  font-family: "Outfit", sans-serif;
+  font-size: font-size/desktop/text-preset-4;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.instructions-box ol li strong {
+  font-weight: 700;
+}
+
+.nutrition-box {
+  margin-top: 32px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+.nutrition-box h2 {
+  font-family: "Young Serif", serif;
+  color: #854632;
+  line-height: 40px;
+  margin-bottom: 24px;
+}
+
+.spacing {
+  height: 16px;
+}
+
+.bar {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin: 8px 0;
+}
+
+.C_title {
+  font-family: "Young Serif", serif;
+  color: #854632;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.N-intro {
+  font-size: 14px;
+  color: #5f564d;
+  margin-bottom: 16px;
+}
+
+.text-box {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.N-text {
+  font-size: 16px;
+  color: #5f564d;
+  padding-left: 35px;
+  flex: 1;
+}
+
+.N-title {
+  font-size: 16px;
+  color: #854632;
+  font-weight: 700;
+  flex: 1;
+}
+
+/* Last text-box margin adjustment */
+.cal-box .text-box:last-child {
+  margin-bottom: 20px;
+}
