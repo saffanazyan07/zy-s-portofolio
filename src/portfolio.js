@@ -182,12 +182,24 @@ const bigProjects = {
   projects: [
     {
       image: require("./assets/images/SSIT.png"),
-      projectName: "Sense Academic",
+      projectName: "Company Website",
       projectDesc: "Developing Company Website",
       footerLink: [
         {
           name: "Visit Website",
           url: "https://sensesemi.in/"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/SSIT.png"),
+      projectName: "Sense Academic",
+      projectDesc: "Developing Company Website",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://senseacademia.com/"
         }
         //  you can add extra buttons here.
       ]
