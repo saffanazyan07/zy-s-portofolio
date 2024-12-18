@@ -25,3 +25,8 @@ yarn-error.log*
 #user generated content
 public/profile.json
 public/blogs.json
+
+#firebase
+.firebase
+.firebaserc
+firebase.json
