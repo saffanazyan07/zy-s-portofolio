@@ -20,10 +20,10 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "M. Raza",
+  title: "HI I'M RAZA, A WEB DEVELOPER LIVING NEAR NYC",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "An Experienced Full Stack Web Developer specializing in building scalable web applications, optimizing cloud infrastructure, and leading development teams to deliver innovative solutions."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -33,13 +33,13 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/Sovereign-Greed",
+  linkedin: "https://www.linkedin.com/in/mohammad-raza-a44304212/",
+  gmail: "mraza081593@gmail.com",
+  // gitlab: "https://gitlab.com/saadpasta",
+  // facebook: "https://www.facebook.com/saad.pasta7",
+  // medium: "https://medium.com/@saadpasta",
+  // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,15 +49,35 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "Crafting seamless user experiences with expertise in modern web development, cloud infrastructure, and API integration.",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "💻 Building dynamic and responsive web applications using React, Node.js, and TypeScript."
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+      "🛠️ Crafting robust backend systems with Node.js, Express, Fastify, and integrating REST and GraphQL APIs."
+    ),
+    emoji(
+      "☁️ Optimizing cloud infrastructure and database performance with AWS (EC2, RDS, Lambda) and PostgreSQL."
+    ),
+    emoji(
+      "🎨 Creating visually engaging, mobile-responsive interfaces using Material UI, Bootstrap, and CSS."
+    ),
+    emoji(
+      "🗄️ Delivering full-stack solutions by combining MongoDB, Mongoose, Prisma, and Redis for scalable data management."
+    ),
+    emoji(
+      "🤖 Automating workflows and integrating AI-powered solutions with OpenAI and third-party APIs."
+    ),
+    emoji(
+      "🤝 Collaborating with teams to lead development projects using Agile methodologies and Git workflows."
+    ),
+    emoji(
+      "🚀 Implementing CI/CD pipelines to ensure smooth deployments and high-performing applications."
+    ),
+    emoji(
+      "🔍 Troubleshooting and optimizing performance issues in front-end, back-end, and database systems."
+    ),    
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -72,10 +92,10 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "css3",
       fontAwesomeClassname: "fab fa-css3-alt"
     },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
+    // {
+    //   skillName: "sass",
+    //   fontAwesomeClassname: "fab fa-sass"
+    // },
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
@@ -89,9 +109,13 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "python",
+      fontAwesomeClassname: "fab fa-python"
     },
+    // {
+    //   skillName: "swift",
+    //   fontAwesomeClassname: "fab fa-swift"
+    // },
     {
       skillName: "npm",
       fontAwesomeClassname: "fab fa-npm"
@@ -105,12 +129,12 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      skillName: "Azure",
+      fontAwesomeClassname: "fab fa-microsoft"
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "firebase",
+      fontAwesomeClassname: "fas fa-fire"
     },
     {
       skillName: "docker",
@@ -123,7 +147,7 @@ https://fontawesome.com/icons?d=gallery */
 // Education Section
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
   schools: [
     {
       schoolName: "Harvard University",
@@ -153,16 +177,16 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      Stack: "Frontend", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Backend",
-      progressPercentage: "70%"
+      progressPercentage: "99%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Dev Ops",
+      progressPercentage: "80%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -174,29 +198,47 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Lead Developer",
+      company: "Logie Inc.",
+      companylogo: require("./assets/images/logieLogo.png"),
+      date: "May 2022 - Present",
+      desc: "Oversee a team of 10+ developers, driving the migration to GraphQL, integrating AI-powered virtual assistants, and deploying scalable cloud solutions on AWS.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Team Leader, Managing over 10 web developers",
+        "Developed a Node.js Backend Server and optimized prisma queries and mutations to improve performance",
+        "Migrated a Legacy Backend REST API application to GraphQL with an automatic playground and documentation",
+        "Integrated Open AI to provide a Virtual Assistant for our users to improve content creation and SEO",
+        "Restructured a Web Application for a modernized and mobile friendly interface using Material UI",
+        "Deployed multiple services using AWS EC2 and hosted a web app with automatic deployments on Amplify",
+        "Hosted a PostgreSQL database on AWS RDS and implemented automatic back ups and monitoring",
+        "Optimized EC2 and RDS services by using AWS CloudWatch to track historical logs and isolate slow queries and mutations",
+        "Integrated Paapi API with AWS Lambda to obtain thousands of product data rapidly"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Full Stack Developer",
+      company: "Logie Inc.",
+      companylogo: require("./assets/images/logieLogo.png"),
+      date: "April 2021 – April 2022",
+      desc: "Created seamless onboarding workflows, optimized data delivery through API integration, and built tools like a thumbnail generator to enhance user experience.",
+      descBullets: [
+        "Developed a React JS application to onboard new users with a simple and effective registration process",
+        "Integrated internal Rest APIs with Frontend to deliver data in an optimal user friendly interface",
+        "Built a robust Thumbnail Generator using BannerBear API, Webhooks, and Redis",
+        "Implemented a multi level feature using Brightdata, Redis, Cron Services, and Webhooks to deliver vital data"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Freelance Web Developer",
+      company: "Self Employed",
+      companylogo: require("./assets/images/freelanceLogo.png"),
+      date: "Feburary 2018 - March 2021",
+      desc: "Specialized in designing and upgrading web applications, resolving technical challenges, and implementing custom third-party API integrations.",
+      descBullets: [
+        "Designed and updated web applications",
+        "Third Party API integrations",
+        "Analyzed Issues and implemented web solutions"
+      ]
     }
   ]
 };
@@ -212,29 +254,51 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Explore My Projects!",
+  subtitle: "SOME PROJECTS THAT I CREATED!",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/filmr8r-logo.jpeg"),
+      projectName: "FilmR8R",
+      projectDesc: "Lights, camera, action! My first web development project is a blockbuster app for rating movies. Built with Node.js for the backend, MongoDB and Mongoose for a seamless database experience, and styled with Bootstrap for that box-office-worthy design. It's a perfect blend of tech and entertainment!",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "Visit FilmR8R",
+          url: "https://protected-falls-09261.herokuapp.com/movies"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/chatter-logo.jpeg"),
+      projectName: "Chatter",
+      projectDesc: "Welcome to Chatter: a sleek, full-stack app where connecting and chatting is effortless! Built using the MERN stack—MongoDB, Express, React, and Node.js—Chatter also integrates Google authentication for seamless sign-ins and account connection. It’s social interaction, powered by cutting-edge tech!",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Visit Chatter",
+          url: "https://chatter-mern-app.herokuapp.com/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/weather-main.jpg"),
+      projectName: "WeatherScope",
+      projectDesc: "WeatherScope is a minimalist weather app built with React class components to challenge myself. It fetches real-time weather using WeatherAPI and geolocation, displaying current conditions, a 3-day forecast, and hourly updates, all without third-party integrations. 🌦️",
+      footerLink: [
+        {
+          name: "Visit WeatherScope",
+          url: "https://weather-app-13137.web.app/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/snapshot-logo.jpeg"),
+      projectName: "SnapShot",
+      projectDesc: "SnapShot is a free image sharing platform where users can easily upload, save, and share photos. With simple sign-up and a user-friendly interface, you can quickly store and share JPEGs, PNGs, and GIFs. Powered by MongoDB and GridFS, SnapShot ensures fast uploads and a smooth experience. Join today and connect with the community! 📸",
+      footerLink: [
+        {
+          name: "Visit SnapShot",
+          url: "https://stark-shore-05326.herokuapp.com/"
         }
       ]
     }
@@ -300,7 +364,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -324,7 +388,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -343,7 +407,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,7 +420,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -371,19 +435,19 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "Got an idea to share or just want to say hello? Don’t be shy—my inbox is always open and ready for action!",
+  // number: "+92-0000000000",
+  email_address: "mohammadraza1993@yahoo.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
