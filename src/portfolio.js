@@ -49,7 +49,8 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "Crafting seamless user experiences with expertise in modern web development, cloud infrastructure, and API integration.",
+  subTitle:
+    "Crafting seamless user experiences with expertise in modern web development, cloud infrastructure, and API integration.",
   skills: [
     emoji(
       "💻 Building dynamic and responsive web applications using React, Node.js, and TypeScript."
@@ -77,7 +78,7 @@ const skillsSection = {
     ),
     emoji(
       "🔍 Troubleshooting and optimizing performance issues in front-end, back-end, and database systems."
-    ),    
+    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -260,7 +261,8 @@ const bigProjects = {
     {
       image: require("./assets/images/filmr8r-logo.jpeg"),
       projectName: "FilmR8R",
-      projectDesc: "Lights, camera, action! My first web development project is a blockbuster app for rating movies. Built with Node.js for the backend, MongoDB and Mongoose for a seamless database experience, and styled with Bootstrap for that box-office-worthy design. It's a perfect blend of tech and entertainment!",
+      projectDesc:
+        "Lights, camera, action! My first web development project is a blockbuster app for rating movies. Built with Node.js for the backend, MongoDB and Mongoose for a seamless database experience, and styled with Bootstrap for that box-office-worthy design. It's a perfect blend of tech and entertainment!",
       footerLink: [
         {
           name: "Visit FilmR8R",
@@ -272,7 +274,8 @@ const bigProjects = {
     {
       image: require("./assets/images/chatter-logo.jpeg"),
       projectName: "Chatter",
-      projectDesc: "Welcome to Chatter: a sleek, full-stack app where connecting and chatting is effortless! Built using the MERN stack—MongoDB, Express, React, and Node.js—Chatter also integrates Google authentication for seamless sign-ins and account connection. It’s social interaction, powered by cutting-edge tech!",
+      projectDesc:
+        "Welcome to Chatter: a sleek, full-stack app where connecting and chatting is effortless! Built using the MERN stack—MongoDB, Express, React, and Node.js—Chatter also integrates Google authentication for seamless sign-ins and account connection. It’s social interaction, powered by cutting-edge tech!",
       footerLink: [
         {
           name: "Visit Chatter",
@@ -283,7 +286,8 @@ const bigProjects = {
     {
       image: require("./assets/images/weather-main.jpg"),
       projectName: "WeatherScope",
-      projectDesc: "WeatherScope is a minimalist weather app built with React class components to challenge myself. It fetches real-time weather using WeatherAPI and geolocation, displaying current conditions, a 3-day forecast, and hourly updates, all without third-party integrations. 🌦️",
+      projectDesc:
+        "WeatherScope is a minimalist weather app built with React class components to challenge myself. It fetches real-time weather using WeatherAPI and geolocation, displaying current conditions, a 3-day forecast, and hourly updates, all without third-party integrations. 🌦️",
       footerLink: [
         {
           name: "Visit WeatherScope",
@@ -294,7 +298,8 @@ const bigProjects = {
     {
       image: require("./assets/images/snapshot-logo.jpeg"),
       projectName: "SnapShot",
-      projectDesc: "SnapShot is a free image sharing platform where users can easily upload, save, and share photos. With simple sign-up and a user-friendly interface, you can quickly store and share JPEGs, PNGs, and GIFs. Powered by MongoDB and GridFS, SnapShot ensures fast uploads and a smooth experience. Join today and connect with the community! 📸",
+      projectDesc:
+        "SnapShot is a free image sharing platform where users can easily upload, save, and share photos. With simple sign-up and a user-friendly interface, you can quickly store and share JPEGs, PNGs, and GIFs. Powered by MongoDB and GridFS, SnapShot ensures fast uploads and a smooth experience. Join today and connect with the community! 📸",
       footerLink: [
         {
           name: "Visit SnapShot",
