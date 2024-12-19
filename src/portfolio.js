@@ -53,7 +53,7 @@ const skillsSection = {
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web applications"
     ),
-    emoji("⚡ Progressive Web Applications "),
+    emoji("⚡ Progressive Web Applications ")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -91,7 +91,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "npm",
       fontAwesomeClassname: "fab fa-npm"
-    },
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -101,18 +101,18 @@ https://fontawesome.com/icons?d=gallery */
 const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
-    
     {
       schoolName: "DNR COLLEGE OF ENGINEERING",
       logo: require("./assets/images/DNR.jfif"),
       subHeader: "Bachelor of Technology in Civil Engineer",
-      duration: "November 2020 - May 2023",
-    },{
+      duration: "November 2020 - May 2023"
+    },
+    {
       schoolName: "SRI VASAVI ENGINEERING COLLEGE",
       logo: require("./assets/images/vasavi"),
       subHeader: "Diploma in Civil Engineer",
-      duration: "June 2017 - NOV 2020",
-    },
+      duration: "June 2017 - NOV 2020"
+    }
   ]
 };
 
@@ -203,7 +203,7 @@ const bigProjects = {
         }
         //  you can add extra buttons here.
       ]
-    },
+    }
     // {
     //   image: require("./assets/images/nextuLogo.webp"),
     //   projectName: "Nextu",
