@@ -257,8 +257,7 @@ const achievementSection = {
 
 const blogSection = {
   title: "Blogs",
-  subtitle:
-    "I love sharing what I learn through writing blogs.",
+  subtitle: "I love sharing what I learn through writing blogs.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
@@ -276,7 +275,8 @@ const resumeSection = {
   title: "Resume",
   subtitle: "Click below to get my resume",
   showResumeDownload: true, // Set false to hide the download button
-  resumeLink: "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Link for downloading resume
+  resumeLink:
+    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Link for downloading resume
   display: true // Set false to hide this section, defaults to true
 };
 
