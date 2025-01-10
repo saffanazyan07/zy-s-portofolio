@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.08f9a84e.css",
-    "main.js": "/portfolio/static/js/main.30abc57a.js",
+    "main.css": "/portfolio/static/css/main.2234fd5b.css",
+    "main.js": "/portfolio/static/js/main.0ee555d9.js",
     "static/css/64.bba8fa55.chunk.css": "/portfolio/static/css/64.bba8fa55.chunk.css",
-    "static/js/64.98920275.chunk.js": "/portfolio/static/js/64.98920275.chunk.js",
+    "static/js/64.56dc6704.chunk.js": "/portfolio/static/js/64.56dc6704.chunk.js",
     "static/css/769.765bab62.chunk.css": "/portfolio/static/css/769.765bab62.chunk.css",
-    "static/js/769.c6ab2c67.chunk.js": "/portfolio/static/js/769.c6ab2c67.chunk.js",
+    "static/js/769.cf986c09.chunk.js": "/portfolio/static/js/769.cf986c09.chunk.js",
+    "static/media/bookdo.png": "/portfolio/static/media/bookdo.bbc7846bf08ded09c1b5.png",
     "static/media/madhacks.png": "/portfolio/static/media/madhacks.c89f015b15c5a28c23c7.png",
+    "static/media/detective.png": "/portfolio/static/media/detective.455e0241723855f72df2.png",
+    "static/media/pod.png": "/portfolio/static/media/pod.dece9f99db32f6f4326d.png",
     "static/media/Montserrat-Regular.ttf": "/portfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/pad.png": "/portfolio/static/media/pad.fac841cd6d359eb090da.png",
     "static/media/Agustina.woff": "/portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/aws_badge.png": "/portfolio/static/media/aws_badge.1d4d9fa250269a5b5067.png",
     "static/media/contactMailDark.svg": "/portfolio/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
@@ -20,10 +24,8 @@
     "static/media/Sass.svg": "/portfolio/static/media/Sass.cca6f1cbf788e988080dffb7bd9ab84b.svg",
     "static/media/AWS-Light.svg": "/portfolio/static/media/AWS-Light.5884438f691cc18cce48b06b820acff0.svg",
     "static/media/Jest.svg": "/portfolio/static/media/Jest.6d3e76338397932f41184c1ba7771ab9.svg",
-    "static/media/saayaHealthLogo.webp": "/portfolio/static/media/saayaHealthLogo.60b27d1f184fadfce43a.webp",
     "static/media/GithubActions-Light.svg": "/portfolio/static/media/GithubActions-Light.e9b8d8d405a876fc130eb0752aab7d2e.svg",
     "static/media/NodeJS-Light.svg": "/portfolio/static/media/NodeJS-Light.aea93409f1111d62a1eaa3347b033dda.svg",
-    "static/media/nextuLogo.webp": "/portfolio/static/media/nextuLogo.e033dbfa4c58c0a906aa.webp",
     "static/media/Github-Light.svg": "/portfolio/static/media/Github-Light.7f8df044b637c67b8b8302fd8aaefe32.svg",
     "static/media/Git.svg": "/portfolio/static/media/Git.87d6e2a3383a582dd8d951daf9c95c04.svg",
     "static/media/Bootstrap.svg": "/portfolio/static/media/Bootstrap.98b61c34f00ae809b39054115f1cc3bf.svg",
@@ -39,15 +41,15 @@
     "static/media/CPP.svg": "/portfolio/static/media/CPP.0170491bcee6df72d47e4c10e0fa8b90.svg",
     "static/media/CSS.svg": "/portfolio/static/media/CSS.5fcd7f5683afc0fc6d0186a083262016.svg",
     "static/media/HTML.svg": "/portfolio/static/media/HTML.ca0db580ffd74f086f2dc2a71dacd660.svg",
-    "main.08f9a84e.css.map": "/portfolio/static/css/main.08f9a84e.css.map",
-    "main.30abc57a.js.map": "/portfolio/static/js/main.30abc57a.js.map",
+    "main.2234fd5b.css.map": "/portfolio/static/css/main.2234fd5b.css.map",
+    "main.0ee555d9.js.map": "/portfolio/static/js/main.0ee555d9.js.map",
     "64.bba8fa55.chunk.css.map": "/portfolio/static/css/64.bba8fa55.chunk.css.map",
-    "64.98920275.chunk.js.map": "/portfolio/static/js/64.98920275.chunk.js.map",
+    "64.56dc6704.chunk.js.map": "/portfolio/static/js/64.56dc6704.chunk.js.map",
     "769.765bab62.chunk.css.map": "/portfolio/static/css/769.765bab62.chunk.css.map",
-    "769.c6ab2c67.chunk.js.map": "/portfolio/static/js/769.c6ab2c67.chunk.js.map"
+    "769.cf986c09.chunk.js.map": "/portfolio/static/js/769.cf986c09.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.08f9a84e.css",
-    "static/js/main.30abc57a.js"
+    "static/css/main.2234fd5b.css",
+    "static/js/main.0ee555d9.js"
   ]
 }
