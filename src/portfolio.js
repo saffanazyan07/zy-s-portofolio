@@ -260,56 +260,150 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
+  title: emoji("Certifications 🏆"),
+  subtitle: "Professional Certifications and Technical Achievements",
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+      title: "Microsoft Azure Fundamentals",
+      subtitle: "- Scott Duffy",
+      image: require("./assets/images/microsoft.png"),
+      imageAlt: "Microsoft Azure Logo",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          name: "View Certificate",
+          url: "https://www.udemy.com/certificate/UC-76e9c1c5-c98a-45ab-bcd3-b90e94b0e9a8/"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+      title: "Data Analyst",
+      subtitle: "- Amanda Brophy",
+      image: require("./assets/images/google.png"),
+      imageAlt: "Google Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "View Certificate",
+          url: "https://www.coursera.org/account/accomplishments/verify/DP8U39TMB7T5"
         }
       ]
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "AWS Cloud Practitioner",
+      subtitle: "- Qwiklabs",
+      image: require("./assets/images/amazon.png"),
+      imageAlt: "AWS Logo",
       footerLink: [
-        {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "View Certificate",
+          url: "https://www.udemy.com/certificate/UC-f4e6d4f6-449b-46e1-b9de-393a560660d8/"
+        }
+      ]
+    },
+    {
+      title: "DevOps",
+      subtitle: "- James Wickett",
+      image: require("./assets/images/linkedin.png"),
+      imageAlt: "LinkedIn Logo",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://www.linkedin.com/learning/certificates/8cc5f4038bac08ce655f3151a7d995bfb990ada3872c87eda9a0f6f50f6e8ab4"
+        }
+      ]
+    },
+    {
+      title: "Data Science",
+      subtitle: "- Alex Aklson",
+      image: require("./assets/images/ibm.png"),
+      imageAlt: "IBM Logo",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://www.credly.com/badges/3e444c5b-ce2e-4806-a43a-ab695e29c49a?source=linked_in_profile"
+        }
+      ]
+    },
+    {
+      title: "React.js",
+      subtitle: "- Eve Porcello",
+      image: require("./assets/images/linkedin.png"),
+      imageAlt: "LinkedIn Logo",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://www.linkedin.com/learning/certificates/96186083abf550640bfad38a161259f624fe5ec34dfffc28fb6bb1721b06881d"
+        }
+      ]
+    },
+    {
+      title: "Hadoop",
+      subtitle: "- Romeo Kienzler",
+      image: require("./assets/images/ibm.png"),
+      imageAlt: "IBM Logo",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://www.credly.com/badges/d59d5b66-f335-47fa-b718-2380aa919a99?source=linked_in_profile"
+        }
+      ]
+    },
+    {
+      title: "Agile",
+      subtitle: "- Doug Rose",
+      image: require("./assets/images/linkedin.png"),
+      imageAlt: "LinkedIn Logo",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://www.linkedin.com/learning/certificates/358079d9a219390ea0983d76aeaebdc6a0fdfd64630571f5254865a10f73e21b"
+        }
+      ]
+    },
+    {
+      title: "Scrum Master",
+      subtitle: "- Kelley O'Connell",
+      image: require("./assets/images/linkedin.png"),
+      imageAlt: "LinkedIn Logo",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://www.linkedin.com/learning/certificates/c83ec9f1479ef7550d0de1f4909596dd2d3306429802497951454eae66a5aa7c"
+        }
+      ]
+    },
+    {
+      title: "Introduction to Algorithm and Analysis",
+      subtitle: "- Saurabh Mukhopadhyay",
+      image: require("./assets/images/algorithm.png"),
+      imageAlt: "Algorithm Logo",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://drive.google.com/file/d/1z5ExD_QJVdU0slLkp8CBqSF3-C3g-ro_/view"
+        }
+      ]
+    },
+    {
+      title: "Python",
+      subtitle: "- Harishankaran K",
+      image: require("./assets/images/hackerrank.png"),
+      imageAlt: "HackerRank Logo",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://www.hackerrank.com/certificates/5cb963112ea9"
+        }
+      ]
+    },
+    {
+      title: "SQL Programming",
+      subtitle: "- Scott Simpson",
+      image: require("./assets/images/linkedin.png"),
+      imageAlt: "LinkedIn Logo",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://www.linkedin.com/learning/certificates/78611b075907e847c75006914cab650d9face8e89fdc53b28230edd1b1d84e41?trk=backfilled_certificate"
         }
       ]
     }
