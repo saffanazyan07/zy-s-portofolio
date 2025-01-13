@@ -123,26 +123,29 @@ https://fontawesome.com/icons?d=gallery */
 // Education Section
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
-      schoolName: "Windsor University",
+      schoolName: "University of Windsor",
       logo: require("./assets/images/university-of-windsor.png"),
-      subHeader: "Master of Engineering in Computer and Electrical",
-      duration: "September 2019 - April 2021",
-      desc: "Participated in the research of AI and published 3 papers.",
+      subHeader: "Master's degree in Computer And Electrical Engineering",
+      duration: "2020 - 2021",
+      desc: "Maintained an 86/100 while pursuing research in AI and computer engineering.",
       descBullets: [
-        "As a student at the University of Windsor, I was highly engaged in both academic and extracurricular activities. I participated in various student organizations such as the student government and clubs related to my major, which provided me with valuable leadership and networking opportunities. Additionally, I took part in research projects and internships that allowed me to gain hands-on experience and practical skills related to my field of study.",
-        "To maintain my academic excellence, I always sought out challenging coursework and actively engaged with my professors and classmates in class discussions and group projects. This helped me to not only achieve excellent grades, but also to deepen my understanding of the material and apply it to real-world situations. Overall, my commitment to both academic and extracurricular pursuits allowed me to develop a well-rounded skill set and prepared me for success beyond graduation."
+        "Conducted research in advanced computing technologies and AI applications",
+        "Participated in various academic projects and research initiatives"
       ]
     },
     {
-      schoolName: "Charusat University",
+      schoolName: "CHAROTAR UNIVERSITY OF SCIENCE AND TECHNOLOGY",
       logo: require("./assets/images/charusat-university.jpeg"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2015 - April 2019",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Activities and societies: Achieved a 10.0/10.0 (A+) GPA in Final Semester (Spring 2019) at Charusat University.Participated in Global Entrepreneur Summit, CodeChef Chapter, CodeVita by Tata Consultancy Services."]
+      subHeader: "Bachelor of Technology in Information Technology",
+      duration: "2015 - 2019",
+      desc: "Completed undergraduate studies with strong academic performance and practical project experience.",
+      descBullets: [
+        "Participated in various technical competitions and coding challenges",
+        "Led student technology initiatives and projects"
+      ]
     }
   ]
 };
@@ -158,11 +161,11 @@ const techStack = {
     },
     {
       Stack: "Backend",
-      progressPercentage: "40%"
+      progressPercentage: "85%"
     },
     {
       Stack: "Programming",
-      progressPercentage: "60%"
+      progressPercentage: "90%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -171,32 +174,43 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
       role: "Software Engineer",
       company: "Hearn Industrial Services",
       companylogo: require("./assets/images/hearn-industrial-services.webp"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      date: "October 2023 - Present",
+      desc: "Led architectural design and implementation of complex ERP web applications using React and modern technologies.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Established component library reducing development time by 40%",
+        "Implemented TypeScript and modern testing practices achieving 90% coverage",
+        "Optimized core web vitals leading to 45% faster load times"
       ]
     },
     {
       role: "Software Developer",
       company: "Magna International",
       companylogo: require("./assets/images/magna.jpg"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      date: "August 2021 - September 2023",
+      desc: "Developed and maintained single-page applications using React.js and modern web technologies.",
+      descBullets: [
+        "Implemented RESTful APIs and managed databases including AWS, MySQL, MongoDB",
+        "Led CI/CD implementation using Jenkins for automated deployments",
+        "Integrated developer portals using Backstage.io and analytics tools"
+      ]
     },
     {
-      role: "Full Stack Developer",
+      role: "Full Stack Engineer",
       company: "DI Solutions",
       companylogo: require("./assets/images/di-solutions.jpeg"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      date: "December 2018 - November 2019",
+      desc: "Built responsive web applications using React.js and Node.js stack.",
+      descBullets: [
+        "Optimized website performance through caching and lazy loading",
+        "Developed RESTful APIs using Node.js and Express.js",
+        "Implemented Gulp workflows for asset optimization"
+      ]
     }
   ]
 };
@@ -370,10 +384,9 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
+  number: "+15199956280",
+  email_address: "jaydholariya07@gmail.com"
 };
 
 // Twitter Section
