@@ -24,14 +24,13 @@ const trainings = {
   display: true,
   trainings: [
     {
-      role: "Level 4.5 - 5.5",
+      role: "Level 4.5 - 5.0",
       company: "Es + Padel",
       companylogo: require("./assets/images/esMasPadelLogo.png"),
       date: "13/03/2025 - 16/03/2025",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "8 spots",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Indoor padel club where talents like Pablito Cardona grew up. Es + Padel owns one of the best padel academies in Spain in which almost all under 18 competitors are #1 in their category."
       ]
     }
   ]
@@ -45,10 +44,4 @@ const contactInfo = {
   email_address: "bandejapadeltraining@gmail.com"
 };
 
-export {
-  greeting,
-  socialMediaLinks,
-  splashScreen,
-  trainings,
-  contactInfo
-};
+export {greeting, socialMediaLinks, splashScreen, trainings, contactInfo};
