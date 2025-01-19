@@ -16,35 +16,13 @@ const greeting = {
 
 const socialMediaLinks = {
   instagram: "https://www.instagram.com/bandejapadeltraining/?hl=en",
-  gmail: "bandejapadeltraining@gmail.com",
+  // gmail: "bandejapadeltraining@gmail.com",
   display: true
 };
 
 const trainings = {
   display: true,
   trainings: [
-    {
-      role: "Level 4.5 - 5.5",
-      company: "Es + Padel",
-      companylogo: require("./assets/images/esMasPadelLogo.png"),
-      date: "13/03/2025 - 16/03/2025",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      role: "Level 4.5 - 5.5",
-      company: "Es + Padel",
-      companylogo: require("./assets/images/esMasPadelLogo.png"),
-      date: "13/03/2025 - 16/03/2025",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
     {
       role: "Level 4.5 - 5.5",
       company: "Es + Padel",
