@@ -28,10 +28,8 @@ const trainings = {
       company: "Es + Padel",
       companylogo: require("./assets/images/esMasPadelLogo.png"),
       date: "13/03/2025 - 16/03/2025",
-      desc: "8 spots",
-      descBullets: [
-        "Indoor padel club where talents like Pablito Cardona grew up. Es + Padel owns one of the best padel academies in Spain in which almost all under 18 competitors are #1 in their category."
-      ]
+      desc: "Indoor padel club where talents like Pablito Cardona grew up. Es + Padel owns one of the best padel academies in Spain in which almost all under 18 competitors are #1 in their category.",
+      descBullets: []
     }
   ]
 };
