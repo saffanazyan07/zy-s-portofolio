@@ -8,7 +8,7 @@ const splashScreen = {
 };
 
 const greeting = {
-  username: "Bandeja Padel Training",
+  username: "Bandeja Padel",
   title: "Welcome players",
   subTitle: emoji("Smash limits, serve success and aim for the win"),
   displayGreeting: true
