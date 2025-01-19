@@ -1,20 +1,6 @@
 {
-  "short_name": "BPT",
-  "name": "BPT",
-  "icons": [
-    {
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "type": "image/png",
-      "sizes": "384x384"
-    }
-  ],
+  "short_name": "Bandeja Padel Training",
+  "name": "Bandeja Padel Training",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#6c63ff",
