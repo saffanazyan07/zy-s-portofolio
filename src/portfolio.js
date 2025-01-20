@@ -3,7 +3,7 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import splashAnimation from "./assets/lottie/handTyping"; // Rename to your file name for custom animation
 
 // Splash Screen
 
@@ -20,60 +20,59 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Reynold Figueroa Torres",
+  title: "Hi all, I'm Reynold",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Software Engineer 🚀 with 7+ years of experience crafting seamless, high-quality user experiences across web, mobile, and desktop platforms."
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: true, // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
-const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
+const socialMediaLinks = [
+  // Supported links include: linkedin, github, email, gitlab, facebook, medium, stackoverflow, instagram, twitter and kaggle
+  // Make Sure to include correct Font Awesome Classname to view your icon https://fontawesome.com/icons?d=gallery
   // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
-};
+  {
+    name: "linkedin",
+    url: "linkedin.com/in/reynold-figueroa-36772a129",
+    icon: "fab fa-linkedin-in",
+    title: "LinkedIn"
+  },
+  {
+    name: "email",
+    url: "reynold0801@gmail.com",
+    icon: "fas fa-envelope",
+    title: "Gmail"
+  },
+  {
+    name: "github",
+    url: "https://github.com/rfig81",
+    icon: "fab fa-github",
+    title: "GitHub"
+  }
+];
 
 // Skills Section
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
-  skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
-  ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
+  subTitle:
+    "Skilled Front-End Engineer with a Passion for High-Quality Development",
   softwareSkills: [
+    // Make Sure to include correct Font Awesome Classname to view your icon https://fontawesome.com/icons?d=gallery
     {
-      skillName: "html-5",
+      skillName: "HTML-5",
       fontAwesomeClassname: "fab fa-html5"
     },
     {
-      skillName: "css3",
+      skillName: "CSS3",
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "sass",
+      skillName: "SASS",
       fontAwesomeClassname: "fab fa-sass"
     },
     {
@@ -81,41 +80,36 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "reactjs",
+      skillName: "Vue.js",
+      fontAwesomeClassname: "fab fa-vuejs"
+    },
+    {
+      skillName: "React",
       fontAwesomeClassname: "fab fa-react"
     },
     {
-      skillName: "nodejs",
+      skillName: "Node.js",
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
+      skillName: "SQL",
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "MongoDB",
+      fontAwesomeClassname: "fas fa-database"
     }
+  ],
+  skills: [
+    emoji(
+      "🚀 Design and develop high-quality, responsive user interfaces for web, mobile, and desktop platforms, prioritizing performance, accessibility, and user satisfaction."
+    ),
+    emoji("⚡ Build Scalable Front-End Architectures"),
+    emoji(
+      "🛠️ Integrate and optimize front-end components with back-end services, leveraging REST APIs, databases like MongoDB and SQL, and tools like Git and Webpack."
+    ),
+    emoji("📈 Improve User Engagement"),
+    emoji("🎯 Mentorship and Leadership")
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -126,23 +120,10 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
+      schoolName: "Universidad Interamericana de Puerto Rico",
+      logo: require("./assets/images/interLogo.png"),
       subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      duration: "2013 - 2018"
     }
   ]
 };
@@ -174,29 +155,37 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Front-End Engineer",
+      company: "Bancoli",
+      companylogo: require("./assets/images/bancoliLogo.webp"),
+      date: "2022 – 2024",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Led the team responsible for designing responsive home pages for 3+ products, increasing user engagement.",
+        "Wrote modular, maintainable code, ensuring 100% test coverage and robust application performance.",
+        "Conducted code reviews to uphold quality standards, detect bugs, and maintain design consistency across devices."
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Mobile Engineer",
+      company: "isiNET, LLC",
+      companylogo: require("./assets/images/isinetLogo.webp"),
+      date: "2019 – 2022",
+      descBullets: [
+        "Designed and developed customer-tailored mobile apps and contributed to web application projects.",
+        "Collaborated directly with clients to ensure apps met specific needs, enhancing customer satisfaction.",
+        "Provided user support, resolving technical issues and maintaining application reliability."
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Software Engineer",
+      company: "Freelancer",
+      companylogo: require("./assets/images/freelanceLogo.webp"),
+      date: "2017 – 2022",
+      descBullets: [
+        "Delivered a range of projects, including a cross-platform desktop POS system and an e-commerce platform.",
+        "Led development team on selected projects, gaining leadership and entrepreneurial experience.",
+        "Managed client interactions and project requirements to deliver on-time and tailored solutions."
+      ]
     }
   ]
 };
@@ -206,7 +195,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -239,7 +228,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -300,7 +289,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -324,7 +313,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -343,7 +332,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,34 +345,29 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
 const resumeSection = {
-  title: "Resume",
-  subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
   display: true // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Reach Out to me!"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: emoji("☎️ +49-15256614388")
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,

@@ -1,48 +1,62 @@
 @import "../../_globalColor";
 
+.contact-margin-top {
+  margin-top: 4rem;
+}
+
 .contact-div-main {
   display: flex;
 }
 
-.dark-mode a {
+.dark-mode {
   color: $textColorDark;
 }
 
 .contact-div-main > * {
   flex: 1;
 }
+.contact-info-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info-div > * + * {
+  margin-top: 1rem;
+}
+
+.contact-info-div > div:last-child {
+  margin-top: 2rem;
+}
 
 .contact-title {
-  font-size: 65px;
-  font-weight: 400;
-}
-
-.contact-detail,
-.contact-detail-email {
-  margin-top: 20px;
+  margin: 0;
   font-size: 40px;
   font-weight: 400;
-  color: $subTitle;
-  text-decoration: none;
-}
-
-.contact-detail:hover,
-.contact-detail-email:hover {
-  color: $textColor;
-  text-shadow: 2px 1px 2px $contactDetailHoverTS;
-  transition: all 0.3s;
 }
 
 .contact-subtitle {
   text-transform: uppercase;
+  margin-bottom: 0;
 }
 
-.contact-text-div {
-  margin-top: 1.5rem;
+.contact-phone {
+  color: $textColor;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: none;
 }
 
-.contact-margin-top {
-  margin-top: 4rem;
+.dark-mode .contact-phone {
+  color: $textColorDark;
+}
+
+.contact-phone:hover {
+  text-shadow: 1px 1px 2px $contactDetailHoverTS;
+  transition: all 0.3s;
+}
+
+.contact-socials {
+  margin-top: 2rem;
 }
 
 .contact-image-div > img {
@@ -76,8 +90,7 @@
     margin-top: 1.5rem;
   }
 
-  .contact-detail,
-  .contact-detail-email {
+  .contact-phone {
     font-size: 20px;
   }
 

@@ -47,6 +47,6 @@ export default function Profile() {
       </Suspense>
     );
   } else {
-    return <Contact />;
+    return <Contact prof={prof} key={prof.id} />;
   }
 }

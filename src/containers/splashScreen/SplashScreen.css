@@ -3,11 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
   min-height: 100vh;
 }
 
-.splash-animation-container {
-  height: 50vh;
+.splash-animation-container > div {
+  height: 256px;
 }
 
 .splash-title-container {
