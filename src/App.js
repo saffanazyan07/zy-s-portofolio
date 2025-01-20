@@ -1,11 +1,49 @@
-import React from "react";
 import "./App.scss";
 import Main from "./containers/Main";
+import TrainingOne from "./trainings/trainingOne/TrainingOne";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import SplashScreen from "../src/containers/splashScreen/SplashScreen";
+import {splashScreen} from "../src/portfolio";
+import {StyleProvider} from "../src/contexts/StyleContext";
+import {useLocalStorage} from "../src/hooks/useLocalStorage";
+import React, {useEffect, useState} from "react";
+
 
 function App() {
+  const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
+  const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
+  const [isShowingSplashAnimation, setIsShowingSplashAnimation] =
+    useState(true);
+
+  useEffect(() => {
+    if (splashScreen.enabled) {
+      const splashTimer = setTimeout(
+        () => setIsShowingSplashAnimation(false),
+        splashScreen.duration
+      );
+      return () => {
+        clearTimeout(splashTimer);
+      };
+    }
+  }, []);
+
+  const changeTheme = () => {
+    setIsDark(!isDark);
+  };
   return (
-    <div>
-      <Main />
+    <div className={isDark ? "dark-mode" : null}>
+      <StyleProvider value={{isDark: isDark, changeTheme: changeTheme}}>
+        {isShowingSplashAnimation && splashScreen.enabled ? (
+          <SplashScreen />
+        ) : (
+          <BrowserRouter>
+            <Routes>
+              <Route element={<Main />} path="/" />
+              <Route element={<TrainingOne />} path="1" />
+            </Routes>
+          </BrowserRouter>
+        )}
+      </StyleProvider>
     </div>
   );
 }
