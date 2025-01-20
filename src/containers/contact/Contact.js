@@ -9,7 +9,11 @@ import StyleContext from "../../contexts/StyleContext";
 
 export default function Contact({prof}) {
   const {isDark} = useContext(StyleContext);
-  prof.hireable = isHireable ? "Yes" : "No";
+  if (isHireable) {
+    prof.hireable = "Yes";
+  } else {
+    prof.hireable = "No";
+  }
 
   return (
     <Fade bottom duration={1000} distance="20px">
