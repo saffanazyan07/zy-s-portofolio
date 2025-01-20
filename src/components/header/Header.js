@@ -31,11 +31,11 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {trainingsDisplay && (
             <li>
-              <a href="#training">Trainings</a>
+              <a href="/#training">Trainings</a>
             </li>
           )}
           <li>
-            <a href="#contact">Contact Us</a>
+            <a href="/#contact">Contact Us</a>
           </li>
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
