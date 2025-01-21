@@ -15,19 +15,12 @@ export default function Training() {
             <div>
               <h1 className="training-heading">Trainings</h1>
               <div className="training-cards-div">
-                {trainings.trainings.map((card, i) => {
+                {trainings.trainings.map((training, i) => {
                   return (
                     <TrainingCard
                       key={i}
                       isDark={isDark}
-                      cardInfo={{
-                        company: card.company,
-                        desc: card.desc,
-                        date: card.date,
-                        companylogo: card.companylogo,
-                        role: card.role,
-                        descBullets: card.descBullets
-                      }}
+                      training={training}
                     />
                   );
                 })}

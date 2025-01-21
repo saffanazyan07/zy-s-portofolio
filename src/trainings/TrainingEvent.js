@@ -1,7 +1,7 @@
 import React from "react";
-import "./TrainingOne.scss";
+import "./TrainingEvent.scss";
 
-export default function TrainingOne({training}) {
+export default function TrainingEvent({training}) {
   return (
     <>
       <div className="timeline">

@@ -3,11 +3,11 @@ import Main from "./containers/Main";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import ScrollToTopButton from "./containers/topbutton/Top";
-import TrainingOne from "./trainings/trainingOne/TrainingOne";
+import TrainingEvent from "./trainings/TrainingEvent";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import SplashScreen from "../src/containers/splashScreen/SplashScreen";
 import {splashScreen} from "../src/portfolio";
-import {trainingEvent} from "../src/eventList";
+import {trainings} from "../src/portfolio";
 import {StyleProvider} from "../src/contexts/StyleContext";
 import {useLocalStorage} from "../src/hooks/useLocalStorage";
 import React, {useEffect, useState} from "react";
@@ -45,8 +45,8 @@ function App() {
             <BrowserRouter>
               <Routes>
                 <Route element={<Main />} path="/" />
-                {trainingEvent.map(training => {
-                  return <Route element={<TrainingOne training={training} />} path={training.id} />;
+                {trainings.trainings.map(training => {
+                  return <Route  key={training.id}  element={<TrainingEvent training={training} />} path={training.id} />;
                 })}
               </Routes>
             </BrowserRouter>
