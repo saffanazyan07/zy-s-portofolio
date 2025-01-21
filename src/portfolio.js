@@ -47,7 +47,8 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "Specialize in scalable systems, user-facing features, and high-performance backend and frontend solutions",
+  subTitle:
+    "Specialize in scalable systems, user-facing features, and high-performance backend and frontend solutions",
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
@@ -176,8 +177,7 @@ const workExperiences = {
       companylogo: require("./assets/images/facebookLogo.png"),
       date: "July 2024 – Present",
       desc: "Leading efforts in data collection for medical vision models, focusing on curating high-quality datasets to improve model accuracy for educational surgical procedures, leveraging Python and OpenCV.",
-      descBullets: [
-      ]
+      descBullets: []
     },
     {
       role: "Software Developer   ",
@@ -213,7 +213,8 @@ const bigProjects = {
     {
       image: require("./assets/images/saayaHealthLogo.webp"),
       projectName: "Kitchen Inventory Application",
-      projectDesc: "Built and deployed a cross platform kitchen inventory application in a 4 person team leveraging Ionic & Django that helps people keep track of their kitchen supplies and helps them manage their inventory effectively through shopping lists",
+      projectDesc:
+        "Built and deployed a cross platform kitchen inventory application in a 4 person team leveraging Ionic & Django that helps people keep track of their kitchen supplies and helps them manage their inventory effectively through shopping lists",
       footerLink: [
         {
           name: "Visit Website",
@@ -348,9 +349,7 @@ const podcastSection = {
   subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
 
   // Please Provide with Your Podcast embeded Link
-  podcast: [
-    ""
-  ],
+  podcast: [""],
   display: false // Set false to hide this section, defaults to true
 };
 
