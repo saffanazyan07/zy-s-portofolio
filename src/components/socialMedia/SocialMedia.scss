@@ -79,7 +79,8 @@
 .stack-overflow i:hover,
 .kaggle i:hover,
 .medium i:hover {
-  background-color: $textColor;
+  // https://stackoverflow.com/questions/53682577/how-to-make-any-hovered-color-darker-lighter-that-the-original
+  filter: brightness(1.300);
 }
 
 /* Media Query */
