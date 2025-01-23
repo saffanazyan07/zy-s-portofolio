@@ -20,7 +20,7 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Reynold Figueroa Torres",
+  username: "Reynold Figueroa",
   title: "Hi all, I'm Reynold",
   subTitle: emoji(
     "A passionate Software Engineer 🚀 with 7+ years of experience crafting seamless, high-quality user experiences across web, mobile, and desktop platforms."
