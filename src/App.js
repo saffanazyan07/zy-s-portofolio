@@ -46,8 +46,15 @@ function App() {
               <Routes>
                 <Route element={<Main />} path="/" />
                 {trainings.trainings.map(training => {
-                  return <Route  key={training.id}  element={<TrainingEvent training={training} />} path={training.id} />;
+                  return (
+                    <Route
+                      key={training.id}
+                      element={<TrainingEvent training={training} />}
+                      path={training.id}
+                    />
+                  );
                 })}
+                <Route path="*" element={<Main />} />
               </Routes>
             </BrowserRouter>
             <Footer />

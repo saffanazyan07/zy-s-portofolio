@@ -1,7 +1,7 @@
 import React, {useState, createRef} from "react";
 import "./TrainingCard.scss";
 import ColorThief from "colorthief";
-import { useNavigate } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 export default function TrainingCard({training, isDark}) {
   const navigate = useNavigate();
@@ -19,21 +19,11 @@ export default function TrainingCard({training, isDark}) {
       : "rgb(" + values.join(", ") + ")";
   }
 
-  const GetDescBullets = ({descBullets, isDark}) => {
-    return descBullets
-      ? descBullets.map((item, i) => (
-          <li
-            key={i}
-            className={isDark ? "subTitle dark-mode-text" : "subTitle"}
-          >
-            {item}
-          </li>
-        ))
-      : null;
-  };
-
   return (
-    <div className={isDark ? "training-card-dark" : "training-card"} onClick={() => navigate(`/${training.id}`)}>
+    <div
+      className={isDark ? "training-card-dark" : "training-card"}
+      onClick={() => navigate(`/${training.id}`)}
+    >
       <div style={{background: rgb(colorArrays)}} className="training-banner">
         <div className="training-blurred_div"></div>
         <div className="training-div-company">
@@ -52,18 +42,14 @@ export default function TrainingCard({training, isDark}) {
       <div className="training-text-details">
         <h5
           className={
-            isDark
-              ? "training-text-role dark-mode-text"
-              : "training-text-role"
+            isDark ? "training-text-role dark-mode-text" : "training-text-role"
           }
         >
           {training.level}
         </h5>
         <h5
           className={
-            isDark
-              ? "training-text-date dark-mode-text"
-              : "training-text-date"
+            isDark ? "training-text-date dark-mode-text" : "training-text-date"
           }
         >
           {training.date}
@@ -77,9 +63,6 @@ export default function TrainingCard({training, isDark}) {
         >
           {training.desc}
         </p>
-        <ul>
-          <GetDescBullets descBullets={training.milestones} isDark={isDark} />
-        </ul>
       </div>
     </div>
   );
