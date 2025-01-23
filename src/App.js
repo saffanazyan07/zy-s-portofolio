@@ -12,6 +12,7 @@ import {StyleProvider} from "../src/contexts/StyleContext";
 import {useLocalStorage} from "../src/hooks/useLocalStorage";
 import React, {useEffect, useState} from "react";
 import Contact from "./containers/contact/Contact";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {

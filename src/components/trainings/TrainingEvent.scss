@@ -1,5 +1,6 @@
 @import "../../_globalColor";
 
+
 * {
   box-sizing: border-box;
 }
@@ -38,7 +39,7 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  right: -17px;
+  right: -13px;
   background-color: #FF9F55;
   border: 4px solid #FF9F55;
   top: 15px;
@@ -83,7 +84,7 @@
 
 /* Fix the circle for containerTimelines on the right side */
 .right::after {
-  left: -16px;
+  left: -13px;
 }
 
 /* The actual contentTimeline */
