@@ -11,6 +11,8 @@ import {trainings} from "../src/portfolio";
 import {StyleProvider} from "../src/contexts/StyleContext";
 import {useLocalStorage} from "../src/hooks/useLocalStorage";
 import React, {useEffect, useState} from "react";
+import Contact from "./containers/contact/Contact";
+
 
 function App() {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
@@ -57,6 +59,7 @@ function App() {
                 <Route path="*" element={<Main />} />
               </Routes>
             </BrowserRouter>
+            <Contact />
             <Footer />
             <ScrollToTopButton />
           </>

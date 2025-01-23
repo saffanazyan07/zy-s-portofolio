@@ -11,7 +11,13 @@ export default function TrainingEvent({training}) {
               <div className="containerTimeline left">
                 <div className="contentTimeline">
                   <h2>{milestone.title}</h2>
-                  <p>{milestone.content}</p>
+                  {milestone.contents.map(content => {
+                    return (
+                      <div>
+                        <b>{content.time} -</b> {content.content}
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             );
@@ -19,8 +25,14 @@ export default function TrainingEvent({training}) {
             return (
               <div className="containerTimeline right">
                 <div className="contentTimeline">
-                <h2>{milestone.title}</h2>
-                <p>{milestone.content}</p>
+                  <h2>{milestone.title}</h2>
+                  {milestone.contents.map(content => {
+                    return (
+                      <div>
+                        <b>{content.time} -</b> {content.content}
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             );
