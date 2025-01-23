@@ -3,7 +3,7 @@ import Main from "./containers/Main";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import ScrollToTopButton from "./containers/topbutton/Top";
-import TrainingEvent from "./trainings/TrainingEvent";
+import TrainingEvent from "./components/trainings/TrainingEvent";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import SplashScreen from "../src/containers/splashScreen/SplashScreen";
 import {splashScreen} from "../src/portfolio";

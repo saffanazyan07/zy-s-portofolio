@@ -37,15 +37,15 @@ export default function TrainingCard({training, isDark}) {
       <div style={{background: rgb(colorArrays)}} className="training-banner">
         <div className="training-blurred_div"></div>
         <div className="training-div-company">
-          <h5 className="training-text-company">{training.company}</h5>
+          <h5 className="training-text-company">{training.club}</h5>
         </div>
 
         <img
           crossOrigin={"anonymous"}
           ref={imgRef}
           className="training-roundedimg"
-          src={training.companylogo}
-          alt={training.company}
+          src={training.clubLogo}
+          alt={training.club}
           onLoad={() => getColorArrays()}
         />
       </div>
@@ -57,7 +57,7 @@ export default function TrainingCard({training, isDark}) {
               : "training-text-role"
           }
         >
-          {training.role}
+          {training.level}
         </h5>
         <h5
           className={
@@ -78,7 +78,7 @@ export default function TrainingCard({training, isDark}) {
           {training.desc}
         </p>
         <ul>
-          <GetDescBullets descBullets={training.descBullets} isDark={isDark} />
+          <GetDescBullets descBullets={training.milestones} isDark={isDark} />
         </ul>
       </div>
     </div>

@@ -8,7 +8,7 @@ export default function TrainingEvent({training}) {
         <div className="containerTimeline left">
           <div className="contentTimeline">
             <h2>2017</h2>
-            <p>{training.name}</p>
+            <p>{training.role}</p>
           </div>
         </div>
         <div className="containerTimeline right">
