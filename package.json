@@ -1,5 +1,5 @@
 {
-  "homepage": "https://nachogl1.github.io/bptPortfolio",
+  "homepage": "https://bandejapadeltraining.com",
   "name": "Bandeja Padel Training",
   "version": "0.1.0",
   "private": true,
@@ -24,7 +24,7 @@
   },
   "scripts": {
     "create-404": "cd build && cp index.html 404.html",
-    "add-domain": "echo https://nachogl1.github.io/bptPortfolio > build/CNAME",
+    "add-domain": "echo https://bandejapadeltraining.com > build/CNAME",
     "predeploy": "npm run build",
     "deploy": " npm run add-domain && npm run create-404 && gh-pages -d build",
     "start": "npm run build && react-scripts start",
