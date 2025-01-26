@@ -1,5 +1,5 @@
 {
-  "homepage": "https://bandejapadeltraining.com/",
+  "homepage": "https://nachogl1.github.io/bptPortfolio",
   "name": "Bandeja Padel Training",
   "version": "0.1.0",
   "private": true,
@@ -7,7 +7,7 @@
     "colorthief": "^2.3.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
-    "gh-pages": "^2.1.1",
+    "gh-pages": "^2.2.0",
     "jest-canvas-mock": "^2.3.1",
     "lottie-react": "^2.4.0",
     "react": "^16.10.2",
@@ -23,10 +23,12 @@
     "sass": "^1.32.8"
   },
   "scripts": {
+    "create-404": "cd build && cp index.html 404.html",
+    "add-domain": "echo https://nachogl1.github.io/bptPortfolio > build/CNAME",
     "predeploy": "npm run build",
+    "deploy": " npm run add-domain && npm run create-404 && gh-pages -d build",
     "start": "npm run build && react-scripts start",
     "build": "react-scripts build",
-    "deploy": "gh-pages -b master -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write \"./**/*.{js,css,json,scss}\"",
