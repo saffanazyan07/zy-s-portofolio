@@ -10,10 +10,8 @@ import {splashScreen} from "../src/portfolio";
 import {trainings} from "../src/portfolio";
 import {StyleProvider} from "../src/contexts/StyleContext";
 import {useLocalStorage} from "../src/hooks/useLocalStorage";
-import React, {useEffect, useState} from "react";
+import {useEffect, useState} from "react";
 import Contact from "./containers/contact/Contact";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 function App() {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
